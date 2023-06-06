@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport Captive Portal</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="/dist/output.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="/assets/plugins/animate/animate.min.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+
+<body class="demo-video">
+    <!-- Start Page loader -->
+    <div id="loader-wrapper">
+        <div class="loader-img">
+            <img src="/assets/images/logo.png">
+        </div>
+        <div id="load">
+            <div>G</div>
+            <div>N</div>
+            <div>I</div>
+            <div>D</div>
+            <div>A</div>
+            <div>O</div>
+            <div>L</div>
+        </div>
+        <!-- <div id="loader"></div> -->
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- /.End of Page loader -->
+    <div class="font-poppins h-full video-bg relative" data-vidbg-bg="mp4: /assets/media/video-bg.mp4, webm: assets/media/webm_video.webm, poster: assets/media/fallback.jpg" data-vidbg-options="loop: true, muted: true, overlay: false">
+        <!-- Start Header -->
+        <header class="header fixed flex justify-between py-[1rem] xl:py-[2rem] 2xl:py-[3rem] px-[1rem] md:px-[3rem] lg:px-[4rem] xl:px-[8rem] w-full bg-[#fff] md:bg-transparent z-[99]">
+            <!-- Start Logo -->
+            <div class="logo">
+                <img src="/assets/images/logo-white-2.svg" alt="" class="w-[145px] md:w-[180px] xl:w-[200px]">
+            </div>
+            <!-- /.End Logo -->
+            <!-- Start Navbar -->
+            <div class="menu-wrap">
+                <!-- Start Menu Icon -->
+                <input type="checkbox" class="toggler">
+                <div class="hamburger nodeHover bg-primary">
+                    <div></div>
+                </div>
+                <!-- /.End Menu Icon -->
+                <!-- Start Navlink -->
+                <div class="menu-content">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">F.A.Q</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.End Navlink -->
+            </div>
+            <!-- /.End navbar -->
+        </header>
+        <!-- /.End Header -->
+        <!-- Start Content Wrap -->
+        <div class="content-wrap flex flex-col h-full">
+            <!-- Start Main Content -->
+            <main class="flex items-center w-full h-full">
+                <div class="lg:h-full flex flex-col justify-center w-full pl-[1rem] md:pl-[3rem] lg:pl-[4rem] xl:pl-[8rem] pr-[1rem] md:pr-[3rem] lg:pr-[1rem] my-[4rem] z-10 text-white">
+                    <h2>Welcome to</h2>
+                    <div class="text-wrap relative overflow-hidden">
+                        <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold animate__animated">Cineplex Wi-Fi</h1>
+                    </div>
+                    <p>Enjoy high-speed internet during your stay for 6 hours.</p>
+                    <!-- Start From Group -->
+                    <form action="" class="mt-[4rem]">
+                        <div class="inline-flex items-center">
+                            <div class="relative">
+                                <input type="password" id="password" class="px-[.75rem] py-[1rem]  border border-2 border-primary focus:outline-none focus:border-primary floating-focus-two w-full sm:w-[345px] lg:w-auto xl:w-[345px] bg-transparent nodeHover" required>
+                                <img id="hide-password" src="/assets/images/icon/Show.svg" class="absolute top-[1.3rem] right-[1rem] cursor-pointer" alt="Show Password" onclick="passwordToggle()">
+                                <label for="password" class="absolute top-0 left-0 px-[.75rem] py-[1rem] whitespace-nowrap input-text transition-opacity transition-transform duration-100 ease-in-out">Wi-Fi Password</label>
+                            </div>
+                            <!-- Start Button -->
+                            <button class="flex items-center bg-primary border-2 border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] justify-center">
+                                <svg class="mr-2 hidden sm:block" width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4853 6.39948C14.799 1.71319 7.20102 1.71319 2.51472 6.39948C2.1242 6.79 1.49103 6.79 1.10051 6.39948C0.709987 6.00896 0.709987 5.37579 1.10051 4.98527C6.56785 -0.482069 15.4322 -0.482069 20.8995 4.98527C21.29 5.37579 21.29 6.00896 20.8995 6.39948C20.509 6.79 19.8758 6.79 19.4853 6.39948ZM16.6568 9.2279C13.5326 6.10371 8.46729 6.10371 5.34309 9.2279C4.95257 9.6184 4.3194 9.6184 3.92888 9.2279C3.53836 8.8374 3.53836 8.2042 3.92888 7.8137C7.83412 3.90845 14.1658 3.90845 18.071 7.8137C18.4615 8.2042 18.4615 8.8374 18.071 9.2279C17.6805 9.6184 17.0473 9.6184 16.6568 9.2279ZM13.8284 12.0563C12.2663 10.4942 9.7337 10.4942 8.17158 12.0563C7.78106 12.4469 7.14789 12.4469 6.75737 12.0563C6.36685 11.6658 6.36685 11.0326 6.75737 10.6421C9.1005 8.299 12.8995 8.299 15.2427 10.6421C15.6332 11.0326 15.6332 11.6658 15.2427 12.0563C14.8521 12.4469 14.219 12.4469 13.8284 12.0563ZM9 14.8848C9 13.7802 9.8954 12.8848 11 12.8848C12.1046 12.8848 13 13.7802 13 14.8848C13 15.9893 12.1046 16.8848 11 16.8848C9.8954 16.8848 9 15.9893 9 14.8848Z" fill="white" />
+                                </svg>
+                                <span class="text-white first-letter">Connect</span>
+                            </button>
+                            <!-- /.End Button -->
+                        </div>
+                    </form>
+                    <!-- /.End From Group -->
+                    <div class="form-control mt-[1.5rem]">
+                        <label class="label cursor-pointer justify-start items-start">
+                            <input type="checkbox" class="checkbox border-white rounded-[0]" />
+                            <span class="label-text ml-[10px] font-[400] text-[1rem] text-white">By accessing this Wi-Fi network, you agree to abide<br> by our.<a href="./terms&condition.html"></a><span>Terms & Conditions</span>
+                        </label>
+                    </div>
+                    <p>Do you want access to our internet more? <span class="underline text-primary nodeHover">Register</span></p>
+                </div>
+                <!-- Start Sidebar Image -->
+                <!-- <div class="bg-no-repeat bg-top bg-cover lg:bg-contain h-full right-0 lg:w-[50%] 2xl:w-[40%] absolute lg:relative w-full h-100 top-0 opacity-10 lg:opacity-100"></div> -->
+                <!-- /.End Sidebar Image -->
+            </main>
+            <!-- /. End Main Content -->
+            <!-- Start Footer -->
+            <footer class="footer flex flex-wrap md:absolute bottom-0 w-full gap-3 text-center justify-center md:justify-between px-[1rem] md:px-[3rem] lg:px-[4rem] xl:px-[8rem] py-[2rem] text-white relative z-10">
+                <!-- Start Copy Text -->
+                <div class="copy-text self-end">© 2023 NetGate - All Rights Reserved</div>
+                <!-- /.End Copy Text -->
+                <!-- Start Social Media -->
+                <div class="social-text text-white flex md:flex-col text-right gap-2">
+                    <a href="#" class="nodeHover">Facebook</a>
+                    <a href="#" class="nodeHover">Twitter</a>
+                    <a href="#" class="nodeHover">Instagram</a>
+                    <a href="#" class="nodeHover">LinkedIn</a>
+                </div>
+                <!-- /.End Social Media -->
+            </footer>
+            <!-- /.End Footer -->
+        </div>
+        <!-- /.End Content Wrap -->
+    </div>
+    <!-- create cursor markups  -->
+    <div class="node" id="node"></div>
+    <div class="cursor" id="cursor"></div>
+
+    <!-- Optional JavaScript -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/plugins/node-cursor/nodecursor-jquery.min.js"></script>
+    <script src="/assets/plugins/vidbg/vidbg.min.js"></script>
+    <script src="/assets/js/custom.js"></script>
+</body>
+
+</html>

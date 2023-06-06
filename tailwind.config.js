@@ -1,4 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+
+
+// function withOpacity(variableName) {
+//   return ({ opacityValue }) => {
+//     if (opacityValue !== undefined) {
+//       return `rgba(var(${variableName}), ${opacityValue})`
+//     }
+//     return `rgb(var(${variableName}))`
+//   }
+// }
 module.exports = {
   content: [
     "./src/**/*.{html,js}",
@@ -10,10 +20,10 @@ module.exports = {
         "extra-large":["48px"]
       },
       colors:{
-        "primary":["#212121"],
-        "secondary":["#F5F5F5"],
-        "main":["#A36D3D"]
+        primary: 'var(--color-text-base)',
+        btn: 'var(--btn-bg)',
       },
+
       fontFamily:{
         "poppins":["Poppins"]
       },
@@ -25,5 +35,6 @@ module.exports = {
 
     },
   },
+
   plugins: [require("daisyui")],
 }
