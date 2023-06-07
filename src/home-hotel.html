@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/assets/css/custom.css">
 </head>
 
-<body class="demo-particles">
+<body class="demo-hotel">
     <!-- Start Page loader -->
     <div id="loader-wrapper">
         <div class="loader-img">
@@ -136,29 +136,26 @@
     </header>
     <!-- /.End Header -->
     <!-- Start Content Wrap -->
-    <div class="content-wrap flex flex-col justify-center lg:justify-end min-h-screen bg-[url('/assets/images/bg-particles.jpg')] bg-no-repeat bg-cover relative overlay">
-        <!-- Particles Background -->
-        <div id="particles" class="particles-container particles absolute left-0 right-0 top-0 bottom-0"></div>
-        <!--/.Particles Background-->
+    <div class="content-wrap flex flex-col justify-center min-h-screen bg-[url('/assets/images/bg-hotel.jpg')] bg-no-repeat bg-cover relative overlay">
         <!-- Start Main Content -->
-        <main class="flex justify-end relative z-[1] mt-auto md:mt-0">
-            <div class="lg:h-full flex flex-col lg:w-[50%] 2xl:w-[40%] w-full pl-[1rem] md:px-[3rem] pr-[1rem] lg:pr-[4rem] xl:pr-[8rem] my-[4rem] z-10 text-white justify-end">
-                <div class="lg:pb-40 2xl:pb-52 ">
+        <main class="relative z-[1] mt-auto md:mt-0">
+            <div class="lg:h-full flex flex-col sm:w-[700px] w-full px-[1rem] md:px-[3rem] lg:pl-[4rem] xl:pl-[8rem] my-[4rem] z-10 text-white justify-center">
+                <div id="loginContainer">
                     <h2>Welcome to</h2>
                     <div class="text-wrap relative overflow-hidden">
-                        <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold animate__animated">Tech Shop Wi-Fi</h1>
+                        <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold animate__animated">Hotel Wi-Fi</h1>
                     </div>
                     <p>Enjoy high-speed internet during your stay for 6 hours.</p>
                     <!-- Start From Group -->
                     <form action="" class="mt-[4rem]">
                         <div class="inline-flex items-center">
                             <div class="relative">
-                                <input type="password" id="password" class="px-[.75rem] py-[1rem] bg-transparent  border border-2 border-primary focus:outline-none focus:border-primary floating-focus-two w-full sm:w-[345px] lg:w-auto xl:w-[345px] nodeHover" required>
+                                <input type="password" id="password" class="px-[.75rem] py-[1rem] bg-transparent border-2 border-primary focus:outline-none focus:border-primary floating-focus-two w-full sm:w-[345px] lg:w-auto xl:w-[345px] nodeHover" required>
                                 <img id="hide-password" src="/assets/images/icon/Show.svg" class="absolute top-[1.3rem] right-[1rem] cursor-pointer" alt="Show Password" onclick="passwordToggle()">
-                                <label for="password" class="absolute top-0 left-0 px-[.75rem] py-[1rem] whitespace-nowrap input-text transition-opacity transition-transform duration-100 ease-in-out">Wi-Fi Password</label>
+                                <label for="password" class="absolute top-0 left-0 px-[.75rem] py-[1rem] whitespace-nowrap input-text transition-transform duration-100 ease-in-out">Wi-Fi Password</label>
                             </div>
                             <!-- Start Button -->
-                            <button class="flex items-center bg-btn border-2 bg-primary border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] justify-center">
+                            <button class="flex items-center border-2 bg-primary border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] justify-center" id="connect-btn">
                                 <svg class="mr-2 hidden sm:block" width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4853 6.39948C14.799 1.71319 7.20102 1.71319 2.51472 6.39948C2.1242 6.79 1.49103 6.79 1.10051 6.39948C0.709987 6.00896 0.709987 5.37579 1.10051 4.98527C6.56785 -0.482069 15.4322 -0.482069 20.8995 4.98527C21.29 5.37579 21.29 6.00896 20.8995 6.39948C20.509 6.79 19.8758 6.79 19.4853 6.39948ZM16.6568 9.2279C13.5326 6.10371 8.46729 6.10371 5.34309 9.2279C4.95257 9.6184 4.3194 9.6184 3.92888 9.2279C3.53836 8.8374 3.53836 8.2042 3.92888 7.8137C7.83412 3.90845 14.1658 3.90845 18.071 7.8137C18.4615 8.2042 18.4615 8.8374 18.071 9.2279C17.6805 9.6184 17.0473 9.6184 16.6568 9.2279ZM13.8284 12.0563C12.2663 10.4942 9.7337 10.4942 8.17158 12.0563C7.78106 12.4469 7.14789 12.4469 6.75737 12.0563C6.36685 11.6658 6.36685 11.0326 6.75737 10.6421C9.1005 8.299 12.8995 8.299 15.2427 10.6421C15.6332 11.0326 15.6332 11.6658 15.2427 12.0563C14.8521 12.4469 14.219 12.4469 13.8284 12.0563ZM9 14.8848C9 13.7802 9.8954 12.8848 11 12.8848C12.1046 12.8848 13 13.7802 13 14.8848C13 15.9893 12.1046 16.8848 11 16.8848C9.8954 16.8848 9 15.9893 9 14.8848Z" fill="white" />
                                 </svg>
@@ -174,8 +171,142 @@
                             <span class="label-text ml-[10px] font-[400] text-[1rem] text-white">By accessing this Wi-Fi network, you agree to abide<br class="lg:hidden xl:block"> by our.<a href="./terms&condition.html"></a><span>Terms & Conditions</span>
                         </label>
                     </div>
-                    <p>Do you want access to our internet more? <span class="underline text-primary nodeHover">Register</span></p>
+                    <p>Do you want access to our internet more? <span class="underline text-primary nodeHover" id="registerButton">Register</span></p>
                 </div>
+                <div class="container-hidden" id="registerContainer">
+                    <h2>Register to</h2>
+                    <div class="text-wrap relative overflow-hidden">
+                        <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold">Nateget Packages</h1>
+                    </div>
+                    <p>Enjoy high-speed internet during your stay for 6 hours.</p>
+                    <!-- Start From Group -->
+                    <div class="grid gap-5 mt-[4rem]">
+                        <!-- Start Radio Button -->
+                        <div>
+                            <input class="sr-only peer" type="radio" name="options" id="option_1">
+                            <label class="flex flex-col h-24 px-5 justify-center backdrop-blur-[50px] bg-[#fff]/25 border border-gray-700 rounded cursor-pointer hover:bg-opacity-60 peer-checked:bg-[#282828] peer-checked:opacity-90 peer-checked:border-[#5C91E0] ring-opacity-30 ring-[#5C91E0] peer-checked:ring-1 group" for="option_1">
+                                <div class="flex justify-between">
+                                    <div class="flex items-center mb-1">
+                                        <div class="w-5 h-5 border border-white rounded-full peer-checked:group:bg-indigo-600 mr-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="hidden w-5 h-5 ml-[0.5px] mt-[1px] text-indigo-200 fill-current peer-checked:group:visible" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <span class="text-xl font-medium text-gray-50">Free Internet </span>
+                                    </div>
+                                    <div>
+                                        <span class="font-medium text-base text-primary">Free/day</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-sm font-light text-gray-200 ml-[34px]">Exactly what you need to get started.</span>
+                                    <span class="text-sm font-light text-gray-200">24h - 3mbps</span>
+                                </div>
+                            </label>
+                        </div>
+                        <!-- /.End Radio Button -->
+                        <!-- Start Radio Button -->
+                        <div>
+                            <input class="sr-only peer" type="radio" name="options" id="option_2">
+                            <label class="flex flex-col h-24 px-5 justify-center backdrop-blur-[50px] bg-[#fff]/25 border border-gray-700 rounded cursor-pointer hover:bg-opacity-60 peer-checked:bg-[#282828] peer-checked:opacity-90 peer-checked:border-[#5C91E0] ring-opacity-30 ring-[#5C91E0] peer-checked:ring-1 group" for="option_2">
+                                <div class="flex justify-between">
+                                    <div class="flex items-center mb-1">
+                                        <div class="w-5 h-5 border border-white rounded-full peer-checked:group:bg-indigo-600 mr-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="hidden w-5 h-5 ml-[0.5px] mt-[1px] text-indigo-200 fill-current peer-checked:group:visible" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <span class="text-xl font-medium text-gray-50">Premium Internet</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-medium text-base text-primary">$19.99/day</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-sm font-light text-gray-200 ml-[34px]">Best for streaming, video watching</span>
+                                    <span class="text-sm font-light text-gray-200">72h - 10mbps</span>
+                                </div>
+                            </label>
+                        </div>
+                        <!-- /.End Radio Button -->
+                        <form id="myForm" action="" class="mt-[3rem]  hidden">
+                            <div class="grid grid-cols-2 gap-5">
+                                <!-- Start Input Floating  -->
+                                <div class="form-floating relative">
+                                    <input type="email" class="form-control px-[.75rem] py-[1rem] bg-transparent border border-[#fff]/25 focus:outline-none focus:border-primary floating-focus-two w-full nodeHover" placeholder="name@example.com">
+                                    <label class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none">Email</label>
+                                </div>
+                                <!-- /.End Input Floating  -->
+                                <!-- Start Input Floating  -->
+                                <div class="form-floating relative">
+                                    <input type="text" class="form-control px-[.75rem] py-[1rem] bg-transparent border border-[#fff]/25 focus:outline-none focus:border-primary floating-focus-two w-full nodeHover" placeholder="Card Holder Name">
+                                    <label class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none">Card Holder Name</label>
+                                </div>
+                                <!-- /.End Input Floating  -->
+                                <!-- Start Input Floating  -->
+                                <div class="col-span-2 form-floating relative">
+                                    <input type="text" class="form-control px-[.75rem] py-[1rem] bg-transparent border border-[#fff]/25 focus:outline-none focus:border-primary floating-focus-two w-full nodeHover" placeholder="A/C No.">
+                                    <label class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none">A/C No.</label>
+                                </div>
+                                <!-- /.End Input Floating  -->
+                                <!-- Start Input Floating  -->
+                                <div class="form-floating relative">
+                                    <input type="text" class="form-control px-[.75rem] py-[1rem] bg-transparent border border-[#fff]/25 focus:outline-none focus:border-primary floating-focus-two w-full nodeHover" placeholder="Expires">
+                                    <label class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none">Expires</label>
+                                </div>
+                                <!-- /.End Input Floating  -->
+                                <!-- Start Input Floating  -->
+                                <div class="form-floating relative">
+                                    <input type="text" class="form-control px-[.75rem] py-[1rem] bg-transparent border border-[#fff]/25 focus:outline-none focus:border-primary floating-focus-two w-full nodeHover" placeholder="CVV">
+                                    <label class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none">CVV</label>
+                                </div>
+                                <!-- /.End Input Floating  -->
+                            </div>
+                        </form>
+                        <!-- Component End  -->
+                    </div>
+                    <!-- /.End From Group -->
+                    <button class="flex items-center border-2 bg-primary border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] justify-center w-full  mt-[4rem]" id="continue-button">Continue</button>
+                    <p class="pt-[3rem] text-center">Do you want access to our internet more? <button class="underline text-[#9DADF9] nodeHover" id="loginButton"><span>Log in</span></button></p>
+                </div>
+
+
+
+                <div class="container-hidden" id="cong-container">
+                    <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold">Congratulations</h1>
+                    <p>Your registration has been completed.</p>
+                    <div class="backdrop-blur-[50px] bg-[#fff]/25 p-5 text-white text-center mt-[60px]">
+                        <p class="text-[20px]">Wi-Fi Password</p>
+                        <p class="mt-0">winwin4534@</p>
+                    </div>
+                    <span class="text-[#FD0831] underline mt-[30px] block text-center">Copy Link</span>
+                    <button class="flex items-center border-2 bg-primary border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] justify-center w-full  mt-[4rem]" id="loginButtonTwo">Go to Login Screen</button>
+                </div>
+
+
+                <!-- Start Countdown Timer -->
+                <div class="container-hidden" id="logout">
+                    <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold">Hotel Wi-Fi</h1>
+                    <p>Enjoy high-speed internet during your stay for 6 hours.</p>
+                    <div class="backdrop-blur-[50px] bg-[#fff]/25 p-5 mt-[60px]">
+                        <h4 class="text-[20px] text-white text-center ">Session Duration</h4>
+                        <div class="flex w-full justify-center text-[3rem] font-bold text-primary">
+                            <div class="flex">
+                                <h4 id="hours" class="">00</h4>
+                                <div class="">:</div>
+                            </div>
+                            <div class="flex">
+                                <h4 id="minutes" class="">00</h4>
+                                <div class="">:</div>
+                            </div>
+                            <div class="flex">
+                                <h4 id="seconds" class="">00</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="logoutButton" class="border-2 bg-primary border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] w-full mt-[2rem] nodeHover">Logout</button>
+                </div>
+                <!-- End Countdown Timer -->
             </div>
             <!-- Start Sidebar Image -->
             <!-- <div class="bg-[url('/assets/images/illustration/airport.svg')] bg-no-repeat bg-top bg-cover lg:bg-contain h-full right-0 lg:w-[50%] 2xl:w-[40%] absolute lg:relative w-full h-100 top-0 opacity-10 lg:opacity-100"></div> -->
@@ -254,14 +385,128 @@
     <script src="/assets/js/jquery.min.js"></script>
     <!-- Nodecursor -->
     <script src="/assets/plugins/node-cursor/nodecursor-jquery.min.js"></script>
-    <!-- Particles -->
-    <script src="/assets/plugins/particles/particles.min.js"></script>
-    <!-- Particles Active -->
-    <script src="/assets/js/particles.active.js"></script>
     <!-- Background Video -->
     <script src="/assets/plugins/vidbg/vidbg.min.js"></script>
     <!-- Custom -->
     <script src="/assets/js/custom.js"></script>
+    <script>
+        const loginContainer = document.getElementById('loginContainer');
+        const registerContainer = document.getElementById('registerContainer');
+        const loginButton = document.getElementById('loginButton');
+        const registerButton = document.getElementById('registerButton');
+        const continueButton = document.getElementById('continue-button');
+        const passwordButton = document.getElementById('cong-container');
+        const loginBtnTwo = document.getElementById('loginButtonTwo');
+        const connectBtn = document.getElementById('connect-btn');
+        const logOut = document.getElementById('logout');
+        const logoutButton = document.getElementById('logoutButton')
+        loginButton.addEventListener('click', () => {
+            registerContainer.classList.remove('fade-in');
+            registerContainer.classList.add('container-hidden');
+            loginContainer.classList.remove('container-hidden');
+            setTimeout(() => {
+                loginContainer.classList.add('fade-in');
+            }, 50);
+        });
+
+        registerButton.addEventListener('click', () => {
+            loginContainer.classList.remove('fade-in');
+            loginContainer.classList.add('container-hidden');
+            registerContainer.classList.remove('container-hidden');
+            setTimeout(() => {
+                registerContainer.classList.add('fade-in');
+            }, 50);
+        });
+        continueButton.addEventListener('click', () => {
+            passwordButton.classList.add('fade-in');
+            passwordButton.classList.remove('container-hidden');
+            registerContainer.classList.add('container-hidden');
+            setTimeout(() => {
+                registerContainer.classList.add('fade-in');
+            }, 50);
+        });
+        loginBtnTwo.addEventListener('click', () => {
+            loginContainer.classList.add('fade-in');
+            loginContainer.classList.remove('container-hidden');
+            registerContainer.classList.add('container-hidden');
+            passwordButton.classList.add('container-hidden');
+            setTimeout(() => {
+                loginButton.classList.add('fade-in');
+            }, 50);
+        });
+        connectBtn.addEventListener('click', () => {
+            loginContainer.classList.add('fade-in');
+            loginContainer.classList.remove('container-hidden');
+            registerContainer.classList.add('container-hidden');
+            passwordButton.classList.add('container-hidden');
+            setTimeout(() => {
+                loginButton.classList.add('fade-in');
+            }, 50);
+        });
+        connectBtn.addEventListener('click', () => {
+            logOut.classList.add('fade-in');
+            logOut.classList.remove('container-hidden');
+            loginContainer.classList.add('container-hidden');
+            registerContainer.classList.add('container-hidden');
+            passwordButton.classList.add('container-hidden');
+            setTimeout(() => {
+                loginButton.classList.add('fade-in');
+            }, 50);
+        });
+
+        logoutButton.addEventListener('click', () => {
+            loginContainer.classList.add('fade-in');
+            loginContainer.classList.remove('container-hidden');
+            registerContainer.classList.add('container-hidden');
+            passwordButton.classList.add('container-hidden');
+            logOut.classList.add('container-hidden');
+            setTimeout(() => {
+                loginButton.classList.add('fade-in');
+            }, 50);
+        });
+
+    </script>
+    <script>
+        const radioOption1 = document.getElementById('option_1');
+        const radioOption2 = document.getElementById('option_2');
+        const form = document.getElementById('myForm');
+
+        radioOption1.addEventListener('change', function () {
+            if (this.checked) {
+                form.classList.add('hidden');     // Hide the form
+            }
+        });
+
+        radioOption2.addEventListener('change', function () {
+            if (this.checked) {
+                form.classList.remove('hidden');  // Show the form
+            }
+        });
+    </script>
+    <!-- Timer -->
+    <script>
+        var countDown = new Date("June 30, 2023 00:00:00").getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDown - now;
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Add leading zeros if needed
+            hours = addLeadingZero(hours);
+            minutes = addLeadingZero(minutes);
+            seconds = addLeadingZero(seconds);
+
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+        }, 1000);
+
+        function addLeadingZero(value) {
+            return value < 10 ? "0" + value : value;
+        }
+    </script>
 </body>
 
 </html>
