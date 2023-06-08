@@ -20,7 +20,7 @@
     <!-- Start Page loader -->
     <div id="loader-wrapper">
         <div class="loader-img">
-            <img src="/assets/images/logo.png" alt="">
+            <img src="/assets/images/logo.svg" alt="">
         </div>
         <div id="load">
             <div>G</div>
@@ -40,8 +40,8 @@
     <header class="header bg-transparent fixed flex justify-between items-center py-[1rem] xl:py-[2rem] 2xl:py-[3rem] px-[1rem] md:px-[3rem] lg:px-[4rem] xl:px-[8rem] w-full z-[99]">
         <!-- Start Logo -->
         <div class="logo">
-            <img src="/assets/images/logo-white.png" alt="" class="logo-white w-[145px] md:w-[180px] xl:w-[200px]">
-            <img src="/assets/images/logo.png" alt="" class="logo-dark w-[145px] md:w-[180px] xl:w-[200px]">
+            <img src="/assets/images/logo-white.svg" alt="" class="logo-white w-[145px] md:w-[180px] xl:w-[250px]">
+            <img src="/assets/images/logo.svg" alt="" class="logo-dark w-[145px] md:w-[180px] xl:w-[250px]">
         </div>
         <!-- /.End Logo -->
         <!-- Start Navbar -->
@@ -149,13 +149,20 @@
                     <!-- Start From Group -->
                     <form action="" class="mt-[4rem]">
                         <div class="inline-flex items-center">
-                            <div class="relative">
+                            <!-- <div class="relative">
                                 <input type="password" id="password" class="px-[.75rem] py-[1rem] bg-transparent border-2 border-primary focus:outline-none focus:border-primary floating-focus-two w-full sm:w-[345px] lg:w-auto xl:w-[345px] nodeHover" required>
                                 <img id="hide-password" src="/assets/images/icon/Show.svg" class="absolute top-[1.3rem] right-[1rem] cursor-pointer" alt="Show Password" onclick="passwordToggle()">
-                                <label for="password" class="absolute top-0 left-0 px-[.75rem] py-[1rem] whitespace-nowrap input-text transition-transform duration-100 ease-in-out">Wi-Fi Password</label>
+                                <label for="password" class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none">Wi-Fi Password</label>
+                            </div> -->
+                            <!-- Start Input Floating  -->
+                            <div class="form-floating relative">
+                                <input type="password" id="password" class="form-control px-[.75rem] py-[1rem] bg-transparent  border-2 border-primary focus:outline-none focus:border-primary floating-focus-two w-full sm:w-[345px] lg:w-auto xl:w-[345px] nodeHover" placeholder="Wi-Fi Password">
+                                <label for="password" class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none">Wi-Fi Password</label>
+                                <img id="hide-password" src="/assets/images/icon/Show.svg" class="absolute top-[1.3rem] right-[1rem] cursor-pointer" alt="Show Password" onclick="passwordToggle()">
                             </div>
+                            <!-- /.End Input Floating  -->
                             <!-- Start Button -->
-                            <button class="flex items-center border-2 bg-primary border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] justify-center" id="connect-btn">
+                            <button type="button" class="flex items-center border-2 bg-primary border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] justify-center" id="connect-btn">
                                 <svg class="mr-2 hidden sm:block" width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4853 6.39948C14.799 1.71319 7.20102 1.71319 2.51472 6.39948C2.1242 6.79 1.49103 6.79 1.10051 6.39948C0.709987 6.00896 0.709987 5.37579 1.10051 4.98527C6.56785 -0.482069 15.4322 -0.482069 20.8995 4.98527C21.29 5.37579 21.29 6.00896 20.8995 6.39948C20.509 6.79 19.8758 6.79 19.4853 6.39948ZM16.6568 9.2279C13.5326 6.10371 8.46729 6.10371 5.34309 9.2279C4.95257 9.6184 4.3194 9.6184 3.92888 9.2279C3.53836 8.8374 3.53836 8.2042 3.92888 7.8137C7.83412 3.90845 14.1658 3.90845 18.071 7.8137C18.4615 8.2042 18.4615 8.8374 18.071 9.2279C17.6805 9.6184 17.0473 9.6184 16.6568 9.2279ZM13.8284 12.0563C12.2663 10.4942 9.7337 10.4942 8.17158 12.0563C7.78106 12.4469 7.14789 12.4469 6.75737 12.0563C6.36685 11.6658 6.36685 11.0326 6.75737 10.6421C9.1005 8.299 12.8995 8.299 15.2427 10.6421C15.6332 11.0326 15.6332 11.6658 15.2427 12.0563C14.8521 12.4469 14.219 12.4469 13.8284 12.0563ZM9 14.8848C9 13.7802 9.8954 12.8848 11 12.8848C12.1046 12.8848 13 13.7802 13 14.8848C13 15.9893 12.1046 16.8848 11 16.8848C9.8954 16.8848 9 15.9893 9 14.8848Z" fill="white" />
                                 </svg>
@@ -178,7 +185,7 @@
                     <div class="text-wrap relative overflow-hidden">
                         <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold">Nateget Packages</h1>
                     </div>
-                    <p>Enjoy high-speed internet during your stay for 6 hours.</p>
+                    <p>Choose an option to get access to our high-speed internet.</p>
                     <!-- Start From Group -->
                     <div class="grid gap-5 mt-[4rem]">
                         <!-- Start Radio Button -->
@@ -267,11 +274,9 @@
                     </div>
                     <!-- /.End From Group -->
                     <button class="flex items-center border-2 bg-primary border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] justify-center w-full  mt-[4rem]" id="continue-button">Continue</button>
-                    <p class="pt-[3rem] text-center">Do you want access to our internet more? <button class="underline text-[#9DADF9] nodeHover" id="loginButton"><span>Log in</span></button></p>
+                    <p class="pt-[3rem] text-center">Do you want access to our internet more? <button class="underline text-primary nodeHover" id="loginButton"><span>Log in</span></button></p>
                 </div>
-
-
-
+                <!-- Start Congratulations Message  -->
                 <div class="container-hidden" id="cong-container">
                     <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold">Congratulations</h1>
                     <p>Your registration has been completed.</p>
@@ -279,11 +284,10 @@
                         <p class="text-[20px]">Wi-Fi Password</p>
                         <p class="mt-0">winwin4534@</p>
                     </div>
-                    <span class="text-[#FD0831] underline mt-[30px] block text-center">Copy Link</span>
+                    <span class="text-primary underline mt-[30px] block text-center">Copy Link</span>
                     <button class="flex items-center border-2 bg-primary border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] justify-center w-full  mt-[4rem]" id="loginButtonTwo">Go to Login Screen</button>
                 </div>
-
-
+                <!-- /.End Congratulations Message -->
                 <!-- Start Countdown Timer -->
                 <div class="container-hidden" id="logout">
                     <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold">Hotel Wi-Fi</h1>
@@ -291,17 +295,17 @@
                     <div class="backdrop-blur-[50px] bg-[#fff]/25 p-5 mt-[60px]">
                         <h4 class="text-[20px] text-white text-center ">Session Duration</h4>
                         <div class="flex w-full justify-center text-[3rem] font-bold text-primary">
-                            <div class="flex">
-                                <h4 id="hours" class="">00</h4>
-                                <div class="">:</div>
-                            </div>
-                            <div class="flex">
-                                <h4 id="minutes" class="">00</h4>
-                                <div class="">:</div>
-                            </div>
-                            <div class="flex">
-                                <h4 id="seconds" class="">00</h4>
-                            </div>
+                            <!-- Start Hours -->
+                            <h4 id="hours" class="">00</h4>
+                            <div class="">:</div>
+                            <!-- /.End Hours -->
+                            <!-- Start Minutes -->
+                            <h4 id="minutes" class="">00</h4>
+                            <div class="">:</div>
+                            <!-- /.End Minutes -->
+                            <!-- Start Seconds -->
+                            <h4 id="seconds" class="">00</h4>
+                            <!-- /.End Seconds -->
                         </div>
                     </div>
                     <button id="logoutButton" class="border-2 bg-primary border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] w-full mt-[2rem] nodeHover">Logout</button>
@@ -389,124 +393,7 @@
     <script src="/assets/plugins/vidbg/vidbg.min.js"></script>
     <!-- Custom -->
     <script src="/assets/js/custom.js"></script>
-    <script>
-        const loginContainer = document.getElementById('loginContainer');
-        const registerContainer = document.getElementById('registerContainer');
-        const loginButton = document.getElementById('loginButton');
-        const registerButton = document.getElementById('registerButton');
-        const continueButton = document.getElementById('continue-button');
-        const passwordButton = document.getElementById('cong-container');
-        const loginBtnTwo = document.getElementById('loginButtonTwo');
-        const connectBtn = document.getElementById('connect-btn');
-        const logOut = document.getElementById('logout');
-        const logoutButton = document.getElementById('logoutButton')
-        loginButton.addEventListener('click', () => {
-            registerContainer.classList.remove('fade-in');
-            registerContainer.classList.add('container-hidden');
-            loginContainer.classList.remove('container-hidden');
-            setTimeout(() => {
-                loginContainer.classList.add('fade-in');
-            }, 50);
-        });
 
-        registerButton.addEventListener('click', () => {
-            loginContainer.classList.remove('fade-in');
-            loginContainer.classList.add('container-hidden');
-            registerContainer.classList.remove('container-hidden');
-            setTimeout(() => {
-                registerContainer.classList.add('fade-in');
-            }, 50);
-        });
-        continueButton.addEventListener('click', () => {
-            passwordButton.classList.add('fade-in');
-            passwordButton.classList.remove('container-hidden');
-            registerContainer.classList.add('container-hidden');
-            setTimeout(() => {
-                registerContainer.classList.add('fade-in');
-            }, 50);
-        });
-        loginBtnTwo.addEventListener('click', () => {
-            loginContainer.classList.add('fade-in');
-            loginContainer.classList.remove('container-hidden');
-            registerContainer.classList.add('container-hidden');
-            passwordButton.classList.add('container-hidden');
-            setTimeout(() => {
-                loginButton.classList.add('fade-in');
-            }, 50);
-        });
-        connectBtn.addEventListener('click', () => {
-            loginContainer.classList.add('fade-in');
-            loginContainer.classList.remove('container-hidden');
-            registerContainer.classList.add('container-hidden');
-            passwordButton.classList.add('container-hidden');
-            setTimeout(() => {
-                loginButton.classList.add('fade-in');
-            }, 50);
-        });
-        connectBtn.addEventListener('click', () => {
-            logOut.classList.add('fade-in');
-            logOut.classList.remove('container-hidden');
-            loginContainer.classList.add('container-hidden');
-            registerContainer.classList.add('container-hidden');
-            passwordButton.classList.add('container-hidden');
-            setTimeout(() => {
-                loginButton.classList.add('fade-in');
-            }, 50);
-        });
-
-        logoutButton.addEventListener('click', () => {
-            loginContainer.classList.add('fade-in');
-            loginContainer.classList.remove('container-hidden');
-            registerContainer.classList.add('container-hidden');
-            passwordButton.classList.add('container-hidden');
-            logOut.classList.add('container-hidden');
-            setTimeout(() => {
-                loginButton.classList.add('fade-in');
-            }, 50);
-        });
-
-    </script>
-    <script>
-        const radioOption1 = document.getElementById('option_1');
-        const radioOption2 = document.getElementById('option_2');
-        const form = document.getElementById('myForm');
-
-        radioOption1.addEventListener('change', function () {
-            if (this.checked) {
-                form.classList.add('hidden');     // Hide the form
-            }
-        });
-
-        radioOption2.addEventListener('change', function () {
-            if (this.checked) {
-                form.classList.remove('hidden');  // Show the form
-            }
-        });
-    </script>
-    <!-- Timer -->
-    <script>
-        var countDown = new Date("June 30, 2023 00:00:00").getTime();
-        var x = setInterval(function () {
-            var now = new Date().getTime();
-            var distance = countDown - now;
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Add leading zeros if needed
-            hours = addLeadingZero(hours);
-            minutes = addLeadingZero(minutes);
-            seconds = addLeadingZero(seconds);
-
-            document.getElementById("hours").innerHTML = hours;
-            document.getElementById("minutes").innerHTML = minutes;
-            document.getElementById("seconds").innerHTML = seconds;
-        }, 1000);
-
-        function addLeadingZero(value) {
-            return value < 10 ? "0" + value : value;
-        }
-    </script>
 </body>
 
 </html>

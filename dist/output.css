@@ -2533,6 +2533,10 @@ span {
     width: 500px;
   }
 
+  .xl\:w-\[250px\] {
+    width: 250px;
+  }
+
   .xl\:px-\[8rem\] {
     padding-left: 8rem;
     padding-right: 8rem;
