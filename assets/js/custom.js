@@ -38,9 +38,11 @@ $(document).ready(function () {
     }
   });
 
+  /*-------------------------------------------
+        Metismenu
+    --------------------------------------------- */
 
-
-
+  $(".metismenu").metisMenu();
 
   /*-------------------------------------------
            Node Cursor
@@ -63,28 +65,31 @@ $(document).ready(function () {
   ///////////////////
 
 
-  var x = 1;
-  var y = 1;
-  function passwordToggle() {
-    var passwordInput = document.getElementById('password');
-    var hidePasswordImg = document.getElementById('hide-password');
-
-    if (x === 1) {
-      passwordInput.type = 'text';
-      hidePasswordImg.src = '/assets/images/icon/Show.png';
-      x = 0;
-    } else {
-      passwordInput.type = 'password';
-      hidePasswordImg.src = '/assets/images/icon/Hide.png';
-      x = 1;
-    }
-  }
 
 });
 
 
 
 
+
+
+var x = 1;
+var y = 1;
+function passwordToggle() {
+  var passwordInput = document.getElementById('password');
+  // var hidePasswordImg = document.getElementById('hide-password');
+  document.getElementById("hide-password").href="icon-eye-hide"; 
+
+  if (x === 1) {
+    passwordInput.type = 'text';
+    hidePasswordImg.href = '#icon-eye';
+    x = 0;
+  } else {
+    passwordInput.type = 'password';
+    hidePasswordImg.href = '#icon-eye-hide';
+    x = 1;
+  }
+}
 
 
 

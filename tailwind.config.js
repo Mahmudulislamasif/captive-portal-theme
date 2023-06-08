@@ -11,7 +11,7 @@
 // }
 module.exports = {
   content: [
-    "./src/**/*.{html,js}",
+    "./html/**/*.{html,js}",
     // "./node_modules/jquery/dist/jquery.min.js"
   ],
   theme: {

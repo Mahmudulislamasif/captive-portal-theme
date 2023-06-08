@@ -8,8 +8,7 @@
 
 
   :root {
-    --color-fill: #000
-    --btn-bg: #30A2FF;
+    --color-fill: #000 --btn-bg: #30A2FF;
     --color-text-base: #30A2FF;
   }
 
@@ -21,35 +20,63 @@
     --btn-bg: #F78E63;
     --color-text-base: #F78E63;
   }
+
   .demo-music {
     --color-text-base: #A62141;
   }
+
+  .demo-music2 {
+    --color-text-base: #E26165;
+  }
+
   /* .theme-particles {
     --color-text-base: #A62141;
   } */
- 
+
   .demo-airport {
     --color-text-base: #9DADF9;
   }
+
   .demo-hospital {
     --color-text-base: #076CFC;
   }
+
   .demo-school {
     --color-text-base: #FD0831;
   }
+
   .demo-market {
     --color-text-base: #40A34A;
   }
+
   .demo-bus-stop {
     --color-text-base: #ED6B6C;
   }
+
   .demo-city {
     --color-text-base: #5AA390;
   }
+
   .demo-travel {
     --btn-bg: transform;
     --color-text-base: #fff;
   }
+
+  /* Demo Hotel */
+  .demo-hotel,
+  .demo-particles {
+    color: #fff;
+    --bc: 0 0% 100%;
+    --b1: 207 100% 59%;
+  }
+
+  .demo-hotel .checkbox,
+  .demo-particles .checkbox {
+    --tw-border-opacity: 1;
+  }
+
+
+
   html,
   body {
     @apply h-full
@@ -84,7 +111,7 @@
   }
 
 
- 
+
 
 }
 
@@ -97,7 +124,7 @@
   .input-type {
     @apply mt-1 px-4 py-3 border border-primary-0 border-opacity-25 rounded-md bg-secondary-0 focus: outline-none focus:border-main-0 focus:ring-main-0 block w-full shadow-sm sm:text-sm;
   }
- 
+
   /* .floating-focus:focus ~ .input-text{
     @apply text-white bg-[#30A2FF] transform transition-all duration-500 -translate-y-5 translate-x-3 px-3 scale-75;
   }
@@ -113,15 +140,19 @@
   .floating-focus-five:focus ~ .input-text{
     @apply text-black bg-white transform transition-all duration-500 -translate-y-5 translate-x-3 px-3 scale-75;
   } */
-  
+
 
 }
-@layer utilities{
+
+@layer utilities {
+
   .cursor::before,
-  .node.expand::before{
+  .node.expand::before {
     background-color: var(--color-text-base);
   }
-  .node::before{
+
+  .node::before {
     border-color: var(--color-text-base);
   }
+
 }
