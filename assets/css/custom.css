@@ -4,6 +4,30 @@
 
 
 
+.bg-check {
+  background-color: var(--bg-check);
+}
+
+.border-color-check {
+  border-color: var(--border-color-check);
+}
+
+.btn-color {
+  color: var(--btn-color);
+}
+
+.label-color {
+  color: var(--label-color);
+}
+
+.social-link-color {
+  color: var(--social-link-color);
+}
+
+.bg-social-link {
+  background-color: var(--bg-social-link);
+}
+
 /* Header ------------------ */
 
 .header {
@@ -22,10 +46,19 @@
   background-color: #fff;
 }
 
-header.header-bg .logo-white,
-header.bg-transparent .logo-dark {
+header.header-white.header-bg .logo-dark,
+header.header-white.bg-transparent .logo-white {
   display: none;
 }
+
+
+ header.header-dark.header-bg .logo-white,
+ header.header-dark.bg-transparent .logo-dark {
+  display: none;
+}
+
+
+
 
 /* header.bg-transparent .logo-white,
 header.header-bg .logo-white {
@@ -59,6 +92,7 @@ header.header-bg .logo-white {
   color: #fff;
   right: 0.5em;
 }
+
 .metismenu li ul a {
   font-size: 18px;
   font-weight: 400;
@@ -317,7 +351,8 @@ header.header-bg .logo-white {
 }
 
 .menu-wrap .menu-content>div {
-  background: var(--overlay-color);
+  /* background: var(--overlay-color); */
+  background: var(--color-text-base);
   border-radius: 50%;
   width: 350vw;
   height: 350vw;
@@ -368,16 +403,17 @@ header.header-bg .logo-white {
 
 
 
-  --fill-color: #fff;
+  /* --fill-color: #fff; */
   position: relative;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-text-stroke: 2px var(--fill-color);
-  background: linear-gradient(var(--fill-color) 0 100%) left/0 no-repeat;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  /* -webkit-text-stroke: 2px var(--fill-color);
+  background: linear-gradient(var(--fill-color) 0 100%) left/0 no-repeat; */
+  /* color: transparent; */
+  color: #fff;
+  /* -webkit-background-clip: text;
+  background-clip: text; */
   transition: 0.5s linear;
   font-weight: 800;
   font-size: 3rem;
@@ -436,17 +472,9 @@ header.header-bg .logo-white {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+/* ----------------------------------------------------------------
+    -   Form Floating
+----------------------------------------------------------------- */
 
 @media (prefers-reduced-motion: reduce) {
   .form-floating>label {
@@ -474,9 +502,18 @@ header.header-bg .logo-white {
 
 .form-floating>.form-control:focus~label,
 .form-floating>.form-control:not(:placeholder-shown)~label {
-  /* color: rgba(var(--bs-body-color-rgb), 0.65); */
+  color: #fff;
   transform: scale(0.9) translateY(-1.7rem) translateX(0.15rem);
 }
+
+
+.demo-music .form-floating>.form-control:focus~label,
+.demo-music .form-floating>.form-control:not(:placeholder-shown)~label,
+.demo-bus-stop .form-floating>.form-control:focus~label,
+.demo-bus-stop .form-floating>.form-control:not(:placeholder-shown)~label {
+  color: #fff;
+}
+
 
 .form-floating>.form-control:not(:-moz-placeholder-shown)~label::after {
   position: absolute;
@@ -484,7 +521,7 @@ header.header-bg .logo-white {
   z-index: -1;
   height: 1.5em;
   content: "";
-  background-color: #ed2a2a;
+  background-color: var(--color-text-base);
 }
 
 .form-floating>.form-control:focus~label::after,
@@ -494,7 +531,7 @@ header.header-bg .logo-white {
   z-index: -1;
   height: 1.5em;
   content: "";
-  background-color: #30a2ff;
+  background-color: var(--color-text-base);
 }
 
 .form-floating>.form-control:-webkit-autofill~label {
@@ -510,9 +547,9 @@ header.header-bg .logo-white {
   color: #6c757d;
 }
 
-/* .form-floating > :disabled ~ label::after {
-  background-color: var(--bs-secondary-bg);
-} */
+.form-floating> :disabled~label::after {
+  background-color: var(--color-text-base);
+}
 
 
 
@@ -596,7 +633,7 @@ header.header-bg .logo-white {
 
 @media(min-width: 576px) {
   .loader-img {
-    width: 150px;
+    width: 200px;
     /* height: 100px; */
   }
 }
@@ -1423,16 +1460,10 @@ a:focus {
 
 
 
+/* ----------------------------------------------------------------
+    -   Particles
+----------------------------------------------------------------- */
 
-
-
-
-
-
-
-
-
-/* Particles ------------------------ */
 .particles {
   z-index: 1;
   overflow: hidden;
@@ -1440,13 +1471,9 @@ a:focus {
 
 
 
-
-
-
-
-
-
-/* Tabs --------------------------- */
+/* ----------------------------------------------------------------
+    -   Tabs
+----------------------------------------------------------------- */
 .container-hidden {
   display: none;
 }
@@ -1469,8 +1496,18 @@ a:focus {
 
 
 
+/* ----------------------------------------------------------------
+    -   Radio Check
+----------------------------------------------------------------- */
 
-/* ////////////////////////////// */
+.peer:checked~.group .peer-checked\:group\:bg-primary {
+  background-color: var(--color-text-base);
+}
+
+.peer:checked~.group .peer-checked\:group\:border-primary {
+  border-color: var(--color-text-base);
+}
+
 .peer:checked~.group .peer-checked\:group\:visible {
   display: block;
 }

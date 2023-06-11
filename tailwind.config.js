@@ -21,9 +21,11 @@ module.exports = {
       },
       colors:{
         primary: 'var(--color-text-base)',
-        btn: 'var(--btn-bg)',
+        // btn: 'var(--btn-bg)',
       },
-
+      borderColor:{
+        current: 'var(--border-current)'
+      },
       fontFamily:{
         "poppins":["Poppins"]
       },

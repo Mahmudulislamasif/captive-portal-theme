@@ -11,16 +11,19 @@
     <link rel="stylesheet" href="/dist/output.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- Custom Style -->
+    <!-- Animate CSS -->
     <link rel="stylesheet" href="/assets/plugins/animate/animate.min.css">
+    <!-- Metismenu -->
+    <link rel="stylesheet" href="/assets/plugins/metismenu/metisMenu.min.css">
+    <!-- Custom Style -->
     <link rel="stylesheet" href="/assets/css/custom.css">
 </head>
 
-<body>
+<body class="demo-general">
     <!-- Start Page loader -->
     <div id="loader-wrapper">
         <div class="loader-img">
-            <img src="/assets/images/logo.png" alt="">
+            <img src="/assets/images/logo.svg" alt="">
         </div>
         <div id="load">
             <div>G</div>
@@ -36,153 +39,328 @@
         <div class="loader-section section-right"></div>
     </div>
     <!-- /.End of Page loader -->
-    <div class="font-poppins h-full">
-        <!-- Start Header -->
-        <header class="header fixed flex justify-between py-[1rem] xl:py-[2rem] 2xl:py-[3rem] px-[1rem] md:px-[3rem] lg:px-[4rem] xl:px-[8rem] w-full bg-[#fff] md:bg-transparent z-[99]">
-            <!-- Start Logo -->
-            <div class="logo">
-                <img src="/assets/images/logo.png" alt="" class="w-[145px] md:w-[180px] xl:w-[200px]">
-            </div>
-            <!-- /.End Logo -->
-            <!-- Start Navbar -->
-            <div class="menu-wrap">
-                <!-- Start Menu Icon -->
-                <input type="checkbox" class="toggler">
-                <div class="hamburger nodeHover bg-primary">
-                    <div></div>
-                </div>
-                <!-- /.End Menu Icon -->
-                <!-- Start Navlink -->
-                <div class="menu-content">
-                    <div>
-                        <div>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">F.A.Q</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.End Navlink -->
-            </div>
-            <!-- /.End navbar -->
-        </header>
-        <!-- /.End Header -->
-        <!-- Start Content Wrap -->
-        <div class="content-wrap flex flex-col h-full">
-            <!-- Start Main Content -->
-            <main class="flex items-center w-full h-full">
-                <div class="lg:h-full flex flex-col justify-center lg:w-[50%] 2xl:w-[50%] w-full pl-[1rem] md:pl-[3rem] lg:pl-[4rem] xl:pl-[8rem] pr-[1rem] md:pr-[3rem] lg:pr-[1rem] my-[4rem] z-10">
-                    <h2>Welcome to</h2>
-                    <div class="text-wrap relative overflow-hidden">
-                        <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold animate__animated">Captive Portal Wi-Fi</h1>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus voluptates enim facere magnam <br>distinctio voluptatum dolores nobis. Voluptas, distinctio veritatis?</p>
-                    <!-- Start From Group -->
-                    <form action="" class="mt-[4rem]">
-                        <div class="inline-flex items-center">
-                            <div class="relative">
-                                <input type="password" id="password" class="px-[.75rem] py-[1rem]  border border-2 border-primary focus:outline-none focus:border-primary floating-focus-two w-full sm:w-[345px] lg:w-auto xl:w-[345px] nodeHover" required>
-                                <img id="hide-password" src="/assets/images/icon/Show.svg" class="absolute top-[1.3rem] right-[1rem] cursor-pointer" alt="Show Password" onclick="passwordToggle()">
-                                <label for="password" class="absolute top-0 left-0 px-[.75rem] py-[1rem] whitespace-nowrap input-text transition-opacity transition-transform duration-100 ease-in-ou">Wi-Fi Password</label>
-                            </div>
-                            <!-- Start Button -->
-                            <button class="flex items-center bg-primary border border-2 border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] justify-center">
-                                <svg class="mr-2 hidden sm:block" width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4853 6.39948C14.799 1.71319 7.20102 1.71319 2.51472 6.39948C2.1242 6.79 1.49103 6.79 1.10051 6.39948C0.709987 6.00896 0.709987 5.37579 1.10051 4.98527C6.56785 -0.482069 15.4322 -0.482069 20.8995 4.98527C21.29 5.37579 21.29 6.00896 20.8995 6.39948C20.509 6.79 19.8758 6.79 19.4853 6.39948ZM16.6568 9.2279C13.5326 6.10371 8.46729 6.10371 5.34309 9.2279C4.95257 9.6184 4.3194 9.6184 3.92888 9.2279C3.53836 8.8374 3.53836 8.2042 3.92888 7.8137C7.83412 3.90845 14.1658 3.90845 18.071 7.8137C18.4615 8.2042 18.4615 8.8374 18.071 9.2279C17.6805 9.6184 17.0473 9.6184 16.6568 9.2279ZM13.8284 12.0563C12.2663 10.4942 9.7337 10.4942 8.17158 12.0563C7.78106 12.4469 7.14789 12.4469 6.75737 12.0563C6.36685 11.6658 6.36685 11.0326 6.75737 10.6421C9.1005 8.299 12.8995 8.299 15.2427 10.6421C15.6332 11.0326 15.6332 11.6658 15.2427 12.0563C14.8521 12.4469 14.219 12.4469 13.8284 12.0563ZM9 14.8848C9 13.7802 9.8954 12.8848 11 12.8848C12.1046 12.8848 13 13.7802 13 14.8848C13 15.9893 12.1046 16.8848 11 16.8848C9.8954 16.8848 9 15.9893 9 14.8848Z" fill="white" />
-                                </svg>
-                                <span class="text-white first-letter">Connect</span>
-                            </button>
-                            <!-- /.End Button -->
-                        </div>
-                    </form>
-                    <!-- /.End From Group -->
-                    <div class="form-control mt-[1.5rem]">
-                        <label class="label cursor-pointer justify-start items-start">
-                            <input type="checkbox" class="checkbox rounded-[0]" />
-                            <span class="label-text ml-[10px] font-[400] text-[1rem]">By accessing this Wi-Fi network, you agree to abide<br> by our.<a href="./terms&condition.html"></a><span>Terms & Conditions</span>
-                        </label>
-                    </div>
-                    <p>Do you want access to our internet more? <span class="underline text-primary nodeHover">Register</span></p>
-                </div>
-                <!-- Start Sidebar Image -->
-                <div class="bg-[url('/assets/images/illustration/wifi.svg')] bg-no-repeat bg-center bg-cover lg:bg-contain h-full right-0 lg:w-[50%] 2xl:w-[50%] absolute lg:relative w-full h-100 top-0 opacity-10 lg:opacity-100"></div>
-                <!-- /.End Sidebar Image -->
-            </main>
-            <!-- /. End Main Content -->
-            <!-- Start Footer -->
-            <footer class="footer flex flex-wrap md:absolute bottom-0 w-full gap-3 text-center justify-center md:justify-between px-[1rem] md:px-[3rem] lg:px-[4rem] xl:px-[8rem] py-[2rem]">
-                <!-- Start Copy Text -->
-                <div class="copy-text">© 2023 NetGate - All Rights Reserved</div>
-                <!-- /.End Copy Text -->
-                <!-- Start Social Media -->
-                <div class="flex gap-3 grid-cols-4 justify-center social-icon w-full md:w-auto">
-                    <a href="#" class="nodeHover">
-                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6.66451 2.65667H8.12518V0.112667C7.87318 0.078 7.00651 0 5.99718 0C3.89118 0 2.44851 1.32467 2.44851 3.75933V6H0.124512V8.844H2.44851V16H5.29784V8.84467H7.52784L7.88184 6.00067H5.29718V4.04133C5.29785 3.21933 5.51918 2.65667 6.66451 2.65667Z" fill="#30262A" />
-                        </svg>
-                    </a>
-                    <a href="#" class="nodeHover">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_256_3392)">
-                                <path d="M15.9958 16L15.9998 15.9993V10.1313C15.9998 7.26065 15.3818 5.04932 12.0258 5.04932C10.4125 5.04932 9.32985 5.93465 8.88785 6.77398H8.84118V5.31732H5.65918V15.9993H8.97251V10.71C8.97251 9.31732 9.23651 7.97065 10.9612 7.97065C12.6605 7.97065 12.6858 9.55998 12.6858 10.7993V16H15.9958Z" fill="#30262A" />
-                                <path d="M0.26416 5.31787H3.58149V15.9999H0.26416V5.31787Z" fill="#30262A" />
-                                <path d="M1.92133 0C0.860667 0 0 0.860667 0 1.92133C0 2.982 0.860667 3.86067 1.92133 3.86067C2.982 3.86067 3.84267 2.982 3.84267 1.92133C3.842 0.860667 2.98133 0 1.92133 0Z" fill="#30262A" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_256_3392">
-                                    <rect width="16" height="16" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </a>
-                    <a href="#" class="nodeHover">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_256_3396)">
-                                <path d="M14.356 4.742C15.0067 4.28 15.554 3.70333 16 3.03933C15.4047 3.3 14.7713 3.47267 14.11 3.55667C14.79 3.15067 15.3093 2.51267 15.5533 1.744C14.9193 2.122 14.2193 2.38867 13.4733 2.538C12.8713 1.89667 12.0133 1.5 11.0773 1.5C9.26133 1.5 7.79933 2.974 7.79933 4.78067C7.79933 5.04067 7.82133 5.29067 7.87533 5.52867C5.14867 5.39533 2.73533 4.08867 1.114 2.09733C0.831333 2.58867 0.664667 3.15067 0.664667 3.75533C0.664667 4.89133 1.24933 5.898 2.122 6.48133C1.59467 6.47133 1.078 6.318 0.64 6.07733V6.11333C0.64 7.70733 1.77667 9.03133 3.268 9.33667C3.00067 9.41 2.71 9.44467 2.408 9.44467C2.198 9.44467 1.986 9.43267 1.78733 9.38867C2.212 10.6873 3.41867 11.6427 4.852 11.674C3.736 12.5467 2.31867 13.0727 0.784667 13.0727C0.516 13.0727 0.258 13.0607 0 13.028C1.45333 13.9647 3.17467 14.5 5.032 14.5C10.8207 14.5 14.5933 9.67067 14.356 4.742Z" fill="#30262A" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_256_3396">
-                                    <rect width="16" height="16" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </a>
-                    <a href="#" class="nodeHover">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_256_3398)">
-                                <path d="M5.89551 8.43408C4.96751 8.43408 4.21484 9.18675 4.21484 10.1147V14.3187C4.21484 15.2467 4.96751 15.9994 5.89551 15.9994C6.82351 15.9994 7.57618 15.2467 7.57618 14.3187V10.1147C7.57551 9.18675 6.82284 8.43408 5.89551 8.43408Z" fill="#30262A" />
-                                <path d="M0.0126953 10.1146C0.0126953 11.0433 0.766029 11.7966 1.6947 11.7966C2.62336 11.7966 3.3767 11.0433 3.3767 10.1146V8.43262H1.69603C1.69536 8.43262 1.69536 8.43262 1.6947 8.43262C0.766029 8.43262 0.0126953 9.18595 0.0126953 10.1146Z" fill="#30262A" />
-                                <path d="M5.89738 -0.000488281C5.89671 -0.000488281 5.89605 -0.000488281 5.89538 -0.000488281C4.96671 -0.000488281 4.21338 0.752845 4.21338 1.68151C4.21338 2.61018 4.96671 3.36351 5.89538 3.36351H7.57605C7.57605 2.40951 7.57605 2.64151 7.57605 1.67818C7.57538 0.750845 6.82405 -0.000488281 5.89738 -0.000488281Z" fill="#30262A" />
-                                <path d="M1.68346 7.57982H5.89547C6.82413 7.57982 7.57747 6.82649 7.57747 5.89782C7.57747 4.96915 6.82413 4.21582 5.89547 4.21582H1.68346C0.754798 4.21582 0.00146484 4.96915 0.00146484 5.89782C0.00146484 6.82649 0.754798 7.57982 1.68346 7.57982Z" fill="#30262A" />
-                                <path d="M14.3046 4.21533C13.3773 4.21533 12.626 4.96667 12.626 5.894V5.89733V7.57933H14.3066C15.2353 7.57933 15.9886 6.826 15.9886 5.89733C15.9886 4.96867 15.2353 4.21533 14.3066 4.21533C14.306 4.21533 14.3053 4.21533 14.3046 4.21533Z" fill="#30262A" />
-                                <path d="M8.42725 1.68116V5.89782C8.42725 6.82582 9.17991 7.57849 10.1079 7.57849C11.0359 7.57849 11.7886 6.82582 11.7886 5.89782V1.68116C11.7886 0.753155 11.0359 0.000488281 10.1079 0.000488281C9.17991 0.000488281 8.42725 0.753155 8.42725 1.68116Z" fill="#30262A" />
-                                <path d="M11.7881 14.3174C11.7881 13.3894 11.0354 12.6367 10.1074 12.6367H8.42676V14.3187C8.42742 15.2461 9.17942 15.9981 10.1074 15.9981C11.0354 15.9981 11.7881 15.2454 11.7881 14.3174Z" fill="#30262A" />
-                                <path d="M14.3193 8.43262H10.1073C9.17863 8.43262 8.42529 9.18595 8.42529 10.1146C8.42529 11.0433 9.17863 11.7966 10.1073 11.7966H14.3193C15.248 11.7966 16.0013 11.0433 16.0013 10.1146C16.0013 9.18595 15.248 8.43262 14.3193 8.43262Z" fill="#30262A" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_256_3398">
-                                    <rect width="16" height="16" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </a>
-                </div>
-                <!-- /.End Social Media -->
-            </footer>
-            <!-- /.End Footer -->
+    <!-- Start Header -->
+    <header class="header header-white bg-transparent fixed flex justify-between items-center py-[1rem] xl:py-[2rem] 2xl:py-[2rem] px-[1rem] md:px-[3rem] lg:px-[4rem] xl:px-[8rem] w-full z-[99]">
+        <!-- Start Logo -->
+        <div class="logo">
+            <img src="/assets/images/logo-white.svg" alt="" class="logo-white w-[145px] md:w-[180px] xl:w-[250px]">
+            <img src="/assets/images/logo.svg" alt="" class="logo-dark w-[145px] md:w-[180px] xl:w-[250px]">
         </div>
-        <!-- /.End Content Wrap -->
+        <!-- /.End Logo -->
+        <!-- Start Navbar -->
+        <div class="menu-wrap">
+            <!-- Start Menu Icon -->
+            <input type="checkbox" class="toggler">
+            <div class="hamburger nodeHover bg-primary">
+                <div class="hamburger-icon"></div>
+            </div>
+            <!-- /.End Menu Icon -->
+            <!-- Start Menu -->
+            <div class="menu-content">
+                <div>
+                    <div>
+                        <ul class="metismenu">
+                            <li>
+                                <a class="has-arrow" href="#" aria-expanded="false">Home</a>
+                                <ul>
+                                    <li><a href="home-general.html">Home General</a></li>
+                                    <li><a href="home-hotel.html">Home Hotel</a></li>
+                                    <li><a href="home-hotel.html">Home Airport</a></li>
+                                    <li><a href="home-restaurant.html">Home Restaurant</a></li>
+                                    <li><a href="home-metro.html">Home Merto</a></li>
+                                    <li><a href="home-cineplex.html">Home Cineplex </a></li>
+                                    <li><a href="home-particles.html">Home Tech Shop</a></li>
+                                    <li><a href="home-bus.html">Home Bus</a></li>
+                                    <li><a href="home-market.html">Home Market</a></li>
+                                    <li><a href="home-market.html">Home Office</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="faq.html">F.A.Q</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="terms-conditions.html">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /.End Menu -->
+        </div>
+        <!-- /.End navbar -->
+    </header>
+    <!-- /.End Header -->
+    <!-- /.End of Page loader -->
+    <!-- Start Content Wrap -->
+    <div class="content-wrap flex flex-col justify-center min-h-screen relative overlay">
+        <!-- Start Main Content -->
+        <main class="w-full mt-auto md:mt-0">
+            <div class="lg:w-[50%] 2xl:w-[45%] lg:h-full flex flex-col px-[1rem] md:px-[3rem] lg:pl-[4rem] xl:pl-[8rem] my-[3rem] z-10 justify-center relative">
+                <div class="sm:w-[540px] lg:w-full 2xl:w-[540px] w-full">
+                    <!-- Start Login Content -->
+                    <div id="loginContainer">
+                        <h2>Welcome to</h2>
+                        <div class="text-wrap relative overflow-hidden">
+                            <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold animate__animated">Captive Portal Wi-Fi</h1>
+                        </div>
+                        <p>Enjoy high-speed internet during your stay for 6 hours.</p>
+                        <!-- Start From Group -->
+                        <form action="" class="mt-[4rem]">
+                            <div class="inline-flex items-center">
+                                <!-- Start Input Floating  -->
+                                <div class="form-floating relative">
+                                    <input type="password" id="password" class="form-control px-[.75rem] py-[1rem] bg-transparent  border-2 border-primary focus:outline-none focus:border-primary floating-focus-two w-full sm:w-[345px] lg:w-auto xl:w-[345px] nodeHover" placeholder="Wi-Fi Password">
+                                    <label for="password" class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none label-color">Wi-Fi Password</label>
+                                    <svg class="absolute top-[1.3rem] right-[1rem] cursor-pointer nodeHover" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye" onclick="passwordToggle()">
+                                        <use id="hide-password" xlink:href="#icon-eye-hide"></use>
+                                    </svg>
+                                </div>
+                                <!-- /.End Input Floating  -->
+                                <!-- Start Button -->
+                                <button type="button" class="flex items-center btn-color border-2 bg-primary border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] justify-center nodeHover" id="connect-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 hidden sm:block">
+                                        <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                                        <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                                        <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                                        <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                                    </svg>
+                                    <span class="first-letter">Connect</span>
+                                </button>
+                                <!-- /.End Button -->
+                            </div>
+                        </form>
+                        <!-- /.End From Group -->
+                        <!-- Password Hide Show Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+                            <symbol id="icon-eye">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </symbol>
+                            <symbol id="icon-eye-hide">
+                                <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                                <line x1="1" y1="1" x2="23" y2="23"></line>
+                            </symbol>
+                        </svg>
+                        <!-- /.End Password Hide Show Icon -->
+                        <div class="form-control mt-[1.5rem]">
+                            <label class="label cursor-pointer justify-start items-start">
+                                <input type="checkbox" class="checkbox rounded-[0] text-emerald-500" />
+                                <span class="label-text ml-[10px] font-[400] text-[1rem]">By accessing this Wi-Fi network, you agree to abide<br class="lg:hidden xl:block"> by our.<a href="./terms&condition.html"></a><span>Terms & Conditions</span>
+                            </label>
+                        </div>
+                        <p>Do you want access to our internet more? <button type="button" class="underline text-primary nodeHover" id="registerButton">Register</button></p>
+                    </div>
+                    <!-- /.End Login Content -->
+                    <!-- Start Register Content -->
+                    <div class="container-hidden" id="registerContainer">
+                        <h2>Register to</h2>
+                        <div class="text-wrap relative overflow-hidden">
+                            <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold">Nateget Packages</h1>
+                        </div>
+                        <p>Choose an option to get access to our high-speed internet.</p>
+                        <!-- Start From Group -->
+                        <div class="grid gap-3 mt-[3rem]">
+                            <!-- Start Radio Button -->
+                            <div class="form-check">
+                                <input class="sr-only peer" type="radio" name="options" id="option_1">
+                                <label class="flex items-center gap-2 px-5 py-4 backdrop-blur-[50px] bg-check border border-color-check cursor-pointer hover:bg-opacity-60 peer-checked:opacity-90 peer-checked:border-primary group" for="option_1">
+                                    <div class="flex items-center">
+                                        <div class="shrink-0 w-5 h-5 border border-current rounded-full peer-checked:group:bg-primary peer-checked:group:border-primary mr-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="hidden w-full h-full fill-current peer-checked:group:visible" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="text-xl font-medium">Free Internet</div>
+                                            <div class="text-sm font-light">Exactly what you need to get started.</div>
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <div class="font-medium text-base text-primary">Free/day</div>
+                                        <div class="text-sm font-light">24h - 3mbps</div>
+                                    </div>
+                                </label>
+                            </div>
+                            <!-- /.End Radio Button -->
+                            <!-- Start Radio Button -->
+                            <div class="form-check">
+                                <input class="sr-only peer" type="radio" name="options" id="option_2">
+                                <label class="flex items-center gap-2 px-5 py-4 backdrop-blur-[50px] bg-check border border-color-check cursor-pointer hover:bg-opacity-60 peer-checked:opacity-90 peer-checked:border-primary group" for="option_2">
+                                    <div class="flex items-center">
+                                        <div class="shrink-0 w-5 h-5 border border-current rounded-full peer-checked:group:bg-primary peer-checked:group:border-primary mr-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="hidden w-full h-full fill-current peer-checked:group:visible" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="text-xl font-medium">Premium Internet</div>
+                                            <div class="text-sm font-light">Best for streaming, video watching</div>
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <div class="font-medium text-base text-primary">$19.99/day</div>
+                                        <div class="text-sm font-light">72h - 10mbps</div>
+                                    </div>
+                                </label>
+                            </div>
+                            <!-- /.End Radio Button -->
+                            <!-- Start Form Content -->
+                            <form id="myForm" action="" class="mt-[2rem]  hidden">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <!-- Start Input Floating  -->
+                                    <div class="col-span-2 sm:col-span-1 form-floating relative">
+                                        <input type="email" class="form-control px-[.75rem] py-[1rem] bg-transparent border border-current focus:outline-none focus:border-primary floating-focus-two w-full nodeHover" placeholder="name@example.com">
+                                        <label class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none label-color">Email</label>
+                                    </div>
+                                    <!-- /.End Input Floating  -->
+                                    <!-- Start Input Floating  -->
+                                    <div class="col-span-2 sm:col-span-1 form-floating relative">
+                                        <input type="text" class="form-control px-[.75rem] py-[1rem] bg-transparent border border-current focus:outline-none focus:border-primary floating-focus-two w-full nodeHover" placeholder="Card Holder Name">
+                                        <label class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none label-color">Card Holder Name</label>
+                                    </div>
+                                    <!-- /.End Input Floating  -->
+                                    <!-- Start Input Floating  -->
+                                    <div class="col-span-2 form-floating relative">
+                                        <input type="text" class="form-control px-[.75rem] py-[1rem] bg-transparent border border-current focus:outline-none focus:border-primary floating-focus-two w-full nodeHover" placeholder="A/C No.">
+                                        <label class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none label-color">A/C No.</label>
+                                    </div>
+                                    <!-- /.End Input Floating  -->
+                                    <!-- Start Input Floating  -->
+                                    <div class="col-span-2 sm form-floating relative">
+                                        <input type="text" class="form-control px-[.75rem] py-[1rem] bg-transparent border border-current focus:outline-none focus:border-primary floating-focus-two w-full nodeHover" placeholder="Expires">
+                                        <label class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none label-color">Expires</label>
+                                    </div>
+                                    <!-- /.End Input Floating  -->
+                                    <!-- Start Input Floating  -->
+                                    <div class="col-span-2 sm form-floating relative">
+                                        <input type="text" class="form-control px-[.75rem] py-[1rem] bg-transparent border border-current focus:outline-none focus:border-primary floating-focus-two w-full nodeHover" placeholder="CVV">
+                                        <label class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none label-color">CVV</label>
+                                    </div>
+                                    <!-- /.End Input Floating  -->
+                                </div>
+                            </form>
+                            <!-- /.End Form Content -->
+                        </div>
+                        <!-- /.End From Group -->
+                        <button type="button" class="flex items-center btn-color border-2 bg-primary border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] justify-center w-full mt-[3rem] nodeHover " id="continue-button">Continue</button>
+                        <p class="text-center">Do you want access to our internet more? <button type="button" class="underline text-primary nodeHover" id="loginButton"><span>Log in</span></button></p>
+                    </div>
+                    <!-- /.End Register Content -->
+                    <!-- Start Congratulations ! Message  -->
+                    <div class="container-hidden" id="cong-container">
+                        <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold">Congratulations !</h1>
+                        <p>Your registration has been completed.</p>
+                        <div class="backdrop-blur-[50px] bg-[#fff]/25 p-5 text-center mt-[3rem]">
+                            <p class="text-[20px]">Wi-Fi Password</p>
+                            <p class="mt-0">winwin4534@</p>
+                        </div>
+                        <span class="text-primary underline mt-[30px] block text-center">Copy Link</span>
+                        <button type="button" class="flex items-center btn-color border-2 bg-primary border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] justify-center w-full mt-[3rem] nodeHover " id="loginButtonTwo">Go to Login Screen</button>
+                    </div>
+                    <!-- /.End Congratulations ! Message -->
+                    <!-- Start Countdown Timer -->
+                    <div class="container-hidden" id="logout">
+                        <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold">Metro Train Wi-Fi</h1>
+                        <p>Enjoy high-speed internet during your stay for 6 hours.</p>
+                        <div class="backdrop-blur-[50px] bg-[#fff]/25 p-5 mt-[3rem]">
+                            <h4 class="text-[20px] text-center ">Session Duration</h4>
+                            <div class="flex w-full justify-center text-[3rem] font-bold text-primary">
+                                <!-- Start Hours -->
+                                <h4 id="hours" class="">00</h4>
+                                <div class="">:</div>
+                                <!-- /.End Hours -->
+                                <!-- Start Minutes -->
+                                <h4 id="minutes" class="">00</h4>
+                                <div class="">:</div>
+                                <!-- /.End Minutes -->
+                                <!-- Start Seconds -->
+                                <h4 id="seconds" class="">00</h4>
+                                <!-- /.End Seconds -->
+                            </div>
+                        </div>
+                        <button id="logoutButton" class="border-2 btn-color bg-primary border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] w-full mt-[2rem] nodeHover">Logout</button>
+                    </div>
+                    <!-- End Countdown Timer -->
+                </div>
+            </div>
+            <!-- Start Sidebar Image -->
+            <div class="lg:bg-contain h-full right-0 lg:w-[50%] 2xl:w-[55%] absolute w-full h-100 top-0 opacity-10 lg:opacity-100 overflow-hidden 2xl:px-[8rem]">
+                <img src="/assets/images/illustration/wifi.svg" alt="" class="h-full w-full object-contain">
+            </div>
+            <!-- /.End Sidebar Image -->
+        </main>
+        <!-- /. End Main Content -->
+        <!-- Start Footer -->
+        <footer class="footer flex justify-center md:justify-start flex-wrap md:absolute bottom-0 w-full gap-3 text-center items-center px-[1rem] md:px-[3rem] lg:px-[4rem] xl:px-[8rem] py-[2rem] z-[10] mt-auto">
+            <!-- Start Social Media -->
+            <div class="flex gap-2 grid-cols-4 justify-center social-icon w-full md:w-auto md:pr-3 md:border-r-[1px] border-current">
+                <a href="#" class="nodeHover h-[2.4rem] w-[2.4rem] flex items-center justify-center backdrop-blur-[50px] social-link-color bg-social-link">
+                    <svg width="9" height="16" viewBox="0 0 9 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.66451 2.65667H8.12518V0.112667C7.87318 0.078 7.00651 0 5.99718 0C3.89118 0 2.44851 1.32467 2.44851 3.75933V6H0.124512V8.844H2.44851V16H5.29784V8.84467H7.52784L7.88184 6.00067H5.29718V4.04133C5.29785 3.21933 5.51918 2.65667 6.66451 2.65667Z" fill="currentColor" />
+                    </svg>
+                </a>
+                <a href="#" class="nodeHover h-[2.4rem] w-[2.4rem] flex items-center justify-center backdrop-blur-[50px] social-link-color bg-social-link">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_256_3392)">
+                            <path d="M15.9958 16L15.9998 15.9993V10.1313C15.9998 7.26065 15.3818 5.04932 12.0258 5.04932C10.4125 5.04932 9.32985 5.93465 8.88785 6.77398H8.84118V5.31732H5.65918V15.9993H8.97251V10.71C8.97251 9.31732 9.23651 7.97065 10.9612 7.97065C12.6605 7.97065 12.6858 9.55998 12.6858 10.7993V16H15.9958Z" fill="currentColor" />
+                            <path d="M0.26416 5.31787H3.58149V15.9999H0.26416V5.31787Z" fill="currentColor" />
+                            <path d="M1.92133 0C0.860667 0 0 0.860667 0 1.92133C0 2.982 0.860667 3.86067 1.92133 3.86067C2.982 3.86067 3.84267 2.982 3.84267 1.92133C3.842 0.860667 2.98133 0 1.92133 0Z" fill="currentColor" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_256_3392">
+                                <rect width="16" height="16" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a href="#" class="nodeHover h-[2.4rem] w-[2.4rem] flex items-center justify-center backdrop-blur-[50px] social-link-color bg-social-link">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_256_3396)">
+                            <path d="M14.356 4.742C15.0067 4.28 15.554 3.70333 16 3.03933C15.4047 3.3 14.7713 3.47267 14.11 3.55667C14.79 3.15067 15.3093 2.51267 15.5533 1.744C14.9193 2.122 14.2193 2.38867 13.4733 2.538C12.8713 1.89667 12.0133 1.5 11.0773 1.5C9.26133 1.5 7.79933 2.974 7.79933 4.78067C7.79933 5.04067 7.82133 5.29067 7.87533 5.52867C5.14867 5.39533 2.73533 4.08867 1.114 2.09733C0.831333 2.58867 0.664667 3.15067 0.664667 3.75533C0.664667 4.89133 1.24933 5.898 2.122 6.48133C1.59467 6.47133 1.078 6.318 0.64 6.07733V6.11333C0.64 7.70733 1.77667 9.03133 3.268 9.33667C3.00067 9.41 2.71 9.44467 2.408 9.44467C2.198 9.44467 1.986 9.43267 1.78733 9.38867C2.212 10.6873 3.41867 11.6427 4.852 11.674C3.736 12.5467 2.31867 13.0727 0.784667 13.0727C0.516 13.0727 0.258 13.0607 0 13.028C1.45333 13.9647 3.17467 14.5 5.032 14.5C10.8207 14.5 14.5933 9.67067 14.356 4.742Z" fill="currentColor" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_256_3396">
+                                <rect width="16" height="16" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a href="#" class="nodeHover h-[2.4rem] w-[2.4rem] flex items-center justify-center backdrop-blur-[50px] social-link-color bg-social-link">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_256_3398)">
+                            <path d="M5.89551 8.43408C4.96751 8.43408 4.21484 9.18675 4.21484 10.1147V14.3187C4.21484 15.2467 4.96751 15.9994 5.89551 15.9994C6.82351 15.9994 7.57618 15.2467 7.57618 14.3187V10.1147C7.57551 9.18675 6.82284 8.43408 5.89551 8.43408Z" fill="currentColor" />
+                            <path d="M0.0126953 10.1146C0.0126953 11.0433 0.766029 11.7966 1.6947 11.7966C2.62336 11.7966 3.3767 11.0433 3.3767 10.1146V8.43262H1.69603C1.69536 8.43262 1.69536 8.43262 1.6947 8.43262C0.766029 8.43262 0.0126953 9.18595 0.0126953 10.1146Z" fill="currentColor" />
+                            <path d="M5.89738 -0.000488281C5.89671 -0.000488281 5.89605 -0.000488281 5.89538 -0.000488281C4.96671 -0.000488281 4.21338 0.752845 4.21338 1.68151C4.21338 2.61018 4.96671 3.36351 5.89538 3.36351H7.57605C7.57605 2.40951 7.57605 2.64151 7.57605 1.67818C7.57538 0.750845 6.82405 -0.000488281 5.89738 -0.000488281Z" fill="currentColor" />
+                            <path d="M1.68346 7.57982H5.89547C6.82413 7.57982 7.57747 6.82649 7.57747 5.89782C7.57747 4.96915 6.82413 4.21582 5.89547 4.21582H1.68346C0.754798 4.21582 0.00146484 4.96915 0.00146484 5.89782C0.00146484 6.82649 0.754798 7.57982 1.68346 7.57982Z" fill="currentColor" />
+                            <path d="M14.3046 4.21533C13.3773 4.21533 12.626 4.96667 12.626 5.894V5.89733V7.57933H14.3066C15.2353 7.57933 15.9886 6.826 15.9886 5.89733C15.9886 4.96867 15.2353 4.21533 14.3066 4.21533C14.306 4.21533 14.3053 4.21533 14.3046 4.21533Z" fill="currentColor" />
+                            <path d="M8.42725 1.68116V5.89782C8.42725 6.82582 9.17991 7.57849 10.1079 7.57849C11.0359 7.57849 11.7886 6.82582 11.7886 5.89782V1.68116C11.7886 0.753155 11.0359 0.000488281 10.1079 0.000488281C9.17991 0.000488281 8.42725 0.753155 8.42725 1.68116Z" fill="currentColor" />
+                            <path d="M11.7881 14.3174C11.7881 13.3894 11.0354 12.6367 10.1074 12.6367H8.42676V14.3187C8.42742 15.2461 9.17942 15.9981 10.1074 15.9981C11.0354 15.9981 11.7881 15.2454 11.7881 14.3174Z" fill="currentColor" />
+                            <path d="M14.3193 8.43262H10.1073C9.17863 8.43262 8.42529 9.18595 8.42529 10.1146C8.42529 11.0433 9.17863 11.7966 10.1073 11.7966H14.3193C15.248 11.7966 16.0013 11.0433 16.0013 10.1146C16.0013 9.18595 15.248 8.43262 14.3193 8.43262Z" fill="currentColor" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_256_3398">
+                                <rect width="16" height="16" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <!-- /.End Social Media -->
+            <!-- Start Copy Text -->
+            <div class="copy-text uppercase text-[13px] tracking-[1px]">© 2023 NateGet - All Rights Reserved</div>
+            <!-- /.End Copy Text -->
+        </footer>
+        <!-- /.End Footer -->
     </div>
+    <!-- /.End Content Wrap -->
     <!-- create cursor markups  -->
     <div class="node" id="node"></div>
     <div class="cursor" id="cursor"></div>
-
-    <!-- Optional JavaScript -->
+    <!-- jquery -->
     <script src="/assets/js/jquery.min.js"></script>
+    <!-- metisMenu -->
+    <script src="/assets/plugins/metismenu/metisMenu.min.js"></script>
+    <!-- Nodecursor -->
     <script src="/assets/plugins/node-cursor/nodecursor-jquery.min.js"></script>
+    <!-- Custom -->
     <script src="/assets/js/custom.js"></script>
 </body>
 

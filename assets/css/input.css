@@ -8,21 +8,102 @@
 
 
   :root {
-    --color-fill: #000 --btn-bg: #30A2FF;
+    --color-fill: #000;
+    /* --btn-bg: #30A2FF; */
     --color-text-base: #30A2FF;
+    --border-current: #dee2e6;
+    --btn-color: #fff;
+    --bg-check: rgba(83, 154, 253, 0.05);
+    --border-color-check: rgb(48, 162, 255, .3);
+
+    --social-link-color: #30A2FF;
+    --bg-social-link: rgba(48, 162, 255, 0.25);
   }
+
+
+  /* Demo General ----- */
+  .demo-general{
+    --color-text-base: #7869E9;
+
+    --bg-check: rgba(120, 105, 233, 0.05);
+    --border-color-check: rgb(120, 105, 233, .3);
+
+    --social-link-color: #7869E9;
+    --bg-social-link: rgba(120, 105, 233, 0.25);
+  }
+
+
+  /* Demo Hotel ----- */
+  .demo-hotel{
+    --border-color-check: rgb(255, 255, 255, .1);
+  }
+
+  .demo-hotel,
+  .demo-particles,
+  .demo-music2 {
+    --border-current: rgba(255, 255, 255, 0.25);
+    --bg-check: rgba(255, 255, 255, 0.25);
+  }
+
+  .demo-hotel,
+  .demo-particles,
+  .demo-music2 {
+    color: #fff;
+    --bc: 0 0% 100%;
+    --b1: 207 100% 59%;
+  }
+
+  .demo-hotel .checkbox,
+  .demo-particles .checkbox,
+  .demo-music2 .checkbox {
+    --tw-border-opacity: 1;
+  }
+
+  /* Demo Music ----- */
+
+  .demo-music {
+    --border-current: rgba(40, 40, 40, 0.25);
+    --color-text-base: #A62141;
+    --bg-check: rgba(242, 48, 94, 0.1);
+    --border-color-check: rgba(242, 48, 94, 0.1);
+    --social-link-color: #A62141;
+    --bg-social-link: rgba(255, 255, 255, 0.25);
+  }
+
+
+  /* Demo Bus ----- */
+  .demo-bus-stop {
+    --color-text-base: #ED6B6C;
+    --border-current: rgba(48, 38, 42, 0.25);
+    --bg-check: rgba(255, 255, 255, 0.25);
+    --border-color-check: rgb(237, 107, 108, .3);
+    --social-link-color: #ED6B6C;
+    --bg-social-link: rgba(255, 255, 255, 0.25);
+  }
+
+  /* Demo Particles ----- */
+  .demo-particles{
+    --border-color-check: rgb(255, 255, 255, .1);
+  }
+
+
+  .demo-particles,
+  .demo-hotel {
+    --social-link-color: #fff;
+    --bg-social-link: rgba(255, 255, 255, 0.25);
+  }
+
 
   .demo-video {
     --color-text-base: #C44141;
   }
-
+  /* Demo Resturant ----- */
   .demo-resturant {
-    --btn-bg: #F78E63;
     --color-text-base: #F78E63;
-  }
-
-  .demo-music {
-    --color-text-base: #A62141;
+    --bg-check: rgba(247, 190, 111, 0.15);
+    --border-color-check: rgb(247, 142, 99, .3);
+    --social-link-color: #F78E63;
+    --bg-social-link: rgba(247, 142, 99, 0.25);
   }
 
   .demo-music2 {
@@ -49,10 +130,6 @@
     --color-text-base: #40A34A;
   }
 
-  .demo-bus-stop {
-    --color-text-base: #ED6B6C;
-  }
-
   .demo-city {
     --color-text-base: #5AA390;
   }
@@ -62,18 +139,7 @@
     --color-text-base: #fff;
   }
 
-  /* Demo Hotel */
-  .demo-hotel,
-  .demo-particles {
-    color: #fff;
-    --bc: 0 0% 100%;
-    --b1: 207 100% 59%;
-  }
 
-  .demo-hotel .checkbox,
-  .demo-particles .checkbox {
-    --tw-border-opacity: 1;
-  }
 
 
 

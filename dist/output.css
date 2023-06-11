@@ -587,21 +587,95 @@ html {
 }
 
 :root {
-  --color-fill: #000 --btn-bg: #30A2FF;
+  --color-fill: #000;
+  /* --btn-bg: #30A2FF; */
   --color-text-base: #30A2FF;
+  --border-current: #dee2e6;
+  --btn-color: #fff;
+  --bg-check: rgba(83, 154, 253, 0.05);
+  --border-color-check: rgb(48, 162, 255, .3);
+  --social-link-color: #30A2FF;
+  --bg-social-link: rgba(48, 162, 255, 0.25);
+}
+
+/* Demo General ----- */
+
+.demo-general{
+  --color-text-base: #7869E9;
+  --bg-check: rgba(120, 105, 233, 0.05);
+  --border-color-check: rgb(120, 105, 233, .3);
+  --social-link-color: #7869E9;
+  --bg-social-link: rgba(120, 105, 233, 0.25);
+}
+
+/* Demo Hotel ----- */
+
+.demo-hotel{
+  --border-color-check: rgb(255, 255, 255, .1);
+}
+
+.demo-hotel,
+  .demo-particles,
+  .demo-music2 {
+  --border-current: rgba(255, 255, 255, 0.25);
+  --bg-check: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  --bc: 0 0% 100%;
+  --b1: 207 100% 59%;
+}
+
+.demo-hotel .checkbox,
+  .demo-particles .checkbox,
+  .demo-music2 .checkbox {
+  --tw-border-opacity: 1;
+}
+
+/* Demo Music ----- */
+
+.demo-music {
+  --border-current: rgba(40, 40, 40, 0.25);
+  --color-text-base: #A62141;
+  --bg-check: rgba(242, 48, 94, 0.1);
+  --border-color-check: rgba(242, 48, 94, 0.1);
+  --social-link-color: #A62141;
+  --bg-social-link: rgba(255, 255, 255, 0.25);
+}
+
+/* Demo Bus ----- */
+
+.demo-bus-stop {
+  --color-text-base: #ED6B6C;
+  --border-current: rgba(48, 38, 42, 0.25);
+  --bg-check: rgba(255, 255, 255, 0.25);
+  --border-color-check: rgb(237, 107, 108, .3);
+  --social-link-color: #ED6B6C;
+  --bg-social-link: rgba(255, 255, 255, 0.25);
+}
+
+/* Demo Particles ----- */
+
+.demo-particles{
+  --border-color-check: rgb(255, 255, 255, .1);
+}
+
+.demo-particles,
+  .demo-hotel {
+  --social-link-color: #fff;
+  --bg-social-link: rgba(255, 255, 255, 0.25);
 }
 
 .demo-video {
   --color-text-base: #C44141;
 }
 
-.demo-resturant {
-  --btn-bg: #F78E63;
-  --color-text-base: #F78E63;
-}
+/* Demo Resturant ----- */
 
-.demo-music {
-  --color-text-base: #A62141;
+.demo-resturant {
+  --color-text-base: #F78E63;
+  --bg-check: rgba(247, 190, 111, 0.15);
+  --border-color-check: rgb(247, 142, 99, .3);
+  --social-link-color: #F78E63;
+  --bg-social-link: rgba(247, 142, 99, 0.25);
 }
 
 .demo-music2 {
@@ -612,27 +686,9 @@ html {
     --color-text-base: #A62141;
   } */
 
-.demo-bus-stop {
-  --color-text-base: #ED6B6C;
-}
-
 .demo-travel {
   --btn-bg: transform;
   --color-text-base: #fff;
-}
-
-/* Demo Hotel */
-
-.demo-hotel,
-  .demo-particles {
-  color: #fff;
-  --bc: 0 0% 100%;
-  --b1: 207 100% 59%;
-}
-
-.demo-hotel .checkbox,
-  .demo-particles .checkbox {
-  --tw-border-opacity: 1;
 }
 
 html,
@@ -1842,6 +1898,10 @@ details.collapse summary::-webkit-details-marker {
   grid-column: span 2 / span 2;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -2025,10 +2085,6 @@ details.collapse summary::-webkit-details-marker {
   width: 100%;
 }
 
-.w-\[30\%\] {
-  width: 30%;
-}
-
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -2155,11 +2211,6 @@ details.collapse summary::-webkit-details-marker {
   border-width: 1px;
 }
 
-.border-\[\#000\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
 .border-\[\#076CFC\] {
   --tw-border-opacity: 1;
   border-color: rgb(7 108 252 / var(--tw-border-opacity));
@@ -2180,18 +2231,13 @@ details.collapse summary::-webkit-details-marker {
   border-color: rgb(253 8 49 / var(--tw-border-opacity));
 }
 
-.border-\[\#a62141\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(166 33 65 / var(--tw-border-opacity));
-}
-
 .border-\[\#fff\] {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.border-\[\#fff\]\/25 {
-  border-color: rgb(255 255 255 / 0.25);
+.border-current {
+  border-color: var(--border-current);
 }
 
 .border-gray-600 {
@@ -2246,8 +2292,9 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(253 8 49 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#a62141\]\/25 {
-  background-color: rgb(166 33 65 / 0.25);
+.bg-\[\#ffd3ca\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 211 202 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#fff\] {
@@ -2259,21 +2306,12 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(255 255 255 / 0.25);
 }
 
-.bg-btn {
-  background-color: var(--btn-bg);
-}
-
 .bg-primary {
   background-color: var(--color-text-base);
 }
 
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-\[\#ffd3ca\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 211 202 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/assets\/images\/bg-bus\.png\'\)\] {
@@ -2302,22 +2340,6 @@ details.collapse summary::-webkit-details-marker {
 
 .bg-\[url\(\'\/assets\/images\/illustration\/faq\.svg\'\)\] {
   background-image: url('/assets/images/illustration/faq.svg');
-}
-
-.bg-\[url\(\'\/assets\/images\/illustration\/metro\.svg\'\)\] {
-  background-image: url('/assets/images/illustration/metro.svg');
-}
-
-.bg-\[url\(\'\/assets\/images\/illustration\/music\.png\'\)\] {
-  background-image: url('/assets/images/illustration/music.png');
-}
-
-.bg-\[url\(\'\/assets\/images\/illustration\/restaurant\.svg\'\)\] {
-  background-image: url('/assets/images/illustration/restaurant.svg');
-}
-
-.bg-\[url\(\'\/assets\/images\/illustration\/wifi\.svg\'\)\] {
-  background-image: url('/assets/images/illustration/wifi.svg');
 }
 
 .bg-\[url\(\'\/assets\/images\/img\/travel\/t\'\)\] {
@@ -2360,6 +2382,11 @@ details.collapse summary::-webkit-details-marker {
   fill: currentColor;
 }
 
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -2381,6 +2408,11 @@ details.collapse summary::-webkit-details-marker {
 .px-\[0\.75rem\] {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.px-\[10rem\] {
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 .px-\[1rem\] {
@@ -2551,11 +2583,6 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(253 8 49 / var(--tw-text-opacity));
 }
 
-.text-\[\#a62141\] {
-  --tw-text-opacity: 1;
-  color: rgb(166 33 65 / var(--tw-text-opacity));
-}
-
 .text-emerald-500 {
   --tw-text-opacity: 1;
   color: rgb(16 185 129 / var(--tw-text-opacity));
@@ -2702,6 +2729,10 @@ details.collapse summary::-webkit-details-marker {
   border-color: rgb(92 145 224 / var(--tw-border-opacity));
 }
 
+.peer:checked ~ .peer-checked\:border-primary {
+  border-color: var(--color-text-base);
+}
+
 .peer:checked ~ .peer-checked\:bg-\[\#282828\] {
   --tw-bg-opacity: 1;
   background-color: rgb(40 40 40 / var(--tw-bg-opacity));
@@ -2729,6 +2760,10 @@ details.collapse summary::-webkit-details-marker {
   .sm\:w-\[345px\] {
     width: 345px;
   }
+
+  .sm\:w-\[540px\] {
+    width: 540px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2740,8 +2775,20 @@ details.collapse summary::-webkit-details-marker {
     margin-top: 0px;
   }
 
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:w-\[180px\] {
     width: 180px;
+  }
+
+  .md\:w-\[500px\] {
+    width: 500px;
   }
 
   .md\:w-\[700px\] {
@@ -2820,6 +2867,10 @@ details.collapse summary::-webkit-details-marker {
     width: auto;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:justify-end {
     justify-content: flex-end;
   }
@@ -2831,10 +2882,6 @@ details.collapse summary::-webkit-details-marker {
   .lg\:px-\[4rem\] {
     padding-left: 4rem;
     padding-right: 4rem;
-  }
-
-  .lg\:pb-40 {
-    padding-bottom: 10rem;
   }
 
   .lg\:pl-\[1rem\] {
@@ -2883,6 +2930,10 @@ details.collapse summary::-webkit-details-marker {
     width: 500px;
   }
 
+  .xl\:w-\[600px\] {
+    width: 600px;
+  }
+
   .xl\:px-\[8rem\] {
     padding-left: 8rem;
     padding-right: 8rem;
@@ -2911,8 +2962,20 @@ details.collapse summary::-webkit-details-marker {
     width: 40%;
   }
 
+  .\32xl\:w-\[45\%\] {
+    width: 45%;
+  }
+
   .\32xl\:w-\[50\%\] {
     width: 50%;
+  }
+
+  .\32xl\:w-\[540px\] {
+    width: 540px;
+  }
+
+  .\32xl\:w-\[55\%\] {
+    width: 55%;
   }
 
   .\32xl\:w-\[60\%\] {
@@ -2929,7 +2992,13 @@ details.collapse summary::-webkit-details-marker {
     padding-bottom: 3rem;
   }
 
-  .\32xl\:pb-52 {
-    padding-bottom: 13rem;
+  .\32xl\:px-\[10rem\] {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .\32xl\:px-\[8rem\] {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }

@@ -14,13 +14,17 @@ $(window).on("load", function () {
     $(".text-wrap .animate__animated").addClass("animate__slideInUp");
   }, speed + 300);
 
-  setTimeout(function () {
-    $(".merto-img.animate__animated").addClass("animate__fadeInRight");
-  }, speed + 300);
+  // setTimeout(function () {
+  //   $(".merto-img.animate__animated").addClass("animate__fadeInRight");
+  // }, speed + 300);
+  
+
+
+
+  
 });
 
 $(document).ready(function () {
-
 
 
 
@@ -66,30 +70,72 @@ $(document).ready(function () {
 
 
 
+
 });
 
 
 
 
+// var x = 1;
+// var y = 1;
+// function passwordToggle() {
+//   var passwordInput = document.getElementById('password');
+//   // var hidePasswordImg = document.getElementById('hide-password');
+//   document.getElementById("hide-password").href="icon-eye-hide"; 
+
+//   if (x === 1) {
+//     passwordInput.type = 'text';
+//     hidePasswordImg.href = '#icon-eye';
+//     x = 0;
+//   } else {
+//     passwordInput.type = 'password';
+//     hidePasswordImg.href = '#icon-eye-hide';
+//     x = 1;
+//   }
+// }
+
+
+
+
+// var x = 1;
+// var y = 1;
+
+// function passwordToggle() {
+//   var passwordInput = document.getElementById('password');
+//   var hidePasswordImg = document.getElementById('hide-password');
+
+//   if (x === 1) {
+//     passwordInput.type = 'text';
+//     hidePasswordImg.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '#icon-eye');
+//     x = 0;
+//   } else {
+//     passwordInput.type = 'password';
+//     hidePasswordImg.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '#icon-eye-hide');
+//     x = 1;
+//   }
+// }
+
+
 
 
 var x = 1;
-var y = 1;
+
 function passwordToggle() {
   var passwordInput = document.getElementById('password');
-  // var hidePasswordImg = document.getElementById('hide-password');
-  document.getElementById("hide-password").href="icon-eye-hide"; 
-
+  var hidePasswordIcon = document.getElementById('hide-password');
   if (x === 1) {
-    passwordInput.type = 'text';
-    hidePasswordImg.href = '#icon-eye';
+    passwordInput.type = 'password';
+    hidePasswordIcon.setAttribute('xlink:href', '#icon-eye-hide');
     x = 0;
   } else {
-    passwordInput.type = 'password';
-    hidePasswordImg.href = '#icon-eye-hide';
+    passwordInput.type = 'text';
+    hidePasswordIcon.setAttribute('xlink:href', '#icon-eye');
     x = 1;
   }
+
 }
+
+
 
 
 
@@ -206,3 +252,15 @@ var x = setInterval(function () {
 function addLeadingZero(value) {
   return value < 10 ? "0" + value : value;
 }
+
+
+
+
+
+
+
+
+
+
+
+
