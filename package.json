@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "tailwindcss -i ./assets/css/input.css -o ./dist/output.css --watch"
+    "nateget": "tailwindcss -i ./assets/css/input.css -o ./dist/output.css --watch"
   },
   "devDependencies": {
     "daisyui": "^3.0.2",

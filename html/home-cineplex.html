@@ -11,8 +11,11 @@
     <link rel="stylesheet" href="/dist/output.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- Custom Style -->
+    <!-- Animate CSS -->
     <link rel="stylesheet" href="/assets/plugins/animate/animate.min.css">
+    <!-- Metismenu -->
+    <link rel="stylesheet" href="/assets/plugins/metismenu/metisMenu.min.css">
+    <!-- Custom Style -->
     <link rel="stylesheet" href="/assets/css/custom.css">
 </head>
 
@@ -20,7 +23,7 @@
     <!-- Start Page loader -->
     <div id="loader-wrapper">
         <div class="loader-img">
-            <img src="/assets/images/logo.png">
+            <img src="/assets/images/logo-white.svg" alt="">
         </div>
         <div id="load">
             <div>G</div>
@@ -37,11 +40,11 @@
     </div>
     <!-- /.End of Page loader -->
     <!-- Start Header -->
-    <header class="header bg-transparent fixed flex justify-between items-center py-[1rem] xl:py-[2rem] 2xl:py-[3rem] px-[1rem] md:px-[3rem] lg:px-[4rem] xl:px-[8rem] w-full z-[99]">
+    <header class="header header-dark bg-transparent fixed flex justify-between items-center py-[1rem] xl:py-[2rem] 2xl:py-[2rem] px-[1rem] md:px-[3rem] lg:px-[4rem] xl:px-[8rem] w-full z-[99]">
         <!-- Start Logo -->
         <div class="logo">
-            <img src="/assets/images/logo-white.png" alt="" class="logo-white w-[145px] md:w-[180px] xl:w-[200px]">
-            <img src="/assets/images/logo.png" alt="" class="logo-dark w-[145px] md:w-[180px] xl:w-[200px]">
+            <img src="/assets/images/logo-white.svg" alt="" class="logo-white w-[145px] md:w-[180px] xl:w-[250px]">
+            <img src="/assets/images/logo.svg" alt="" class="logo-dark w-[145px] md:w-[180px] xl:w-[250px]">
         </div>
         <!-- /.End Logo -->
         <!-- Start Navbar -->
@@ -52,125 +55,232 @@
                 <div class="hamburger-icon"></div>
             </div>
             <!-- /.End Menu Icon -->
-            <!-- Start Navlink -->
+            <!-- Start Menu -->
             <div class="menu-content">
                 <div>
                     <div>
-                        <!-- <ul class="relative">
-                        <li><a href="#" class="venues-item"  data-img="/assets/images/travel-bg.png">Home</a></li>
-                        <li><a href="#" class="venues-item" data-img="/assets/images/bus-demo.png">About</a></li>
-                        <li><a href="#">F.A.Q</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <div class="venues-img-wrap">
-                            <div class="venues-img"></div>
-                          </div>
-                    </ul> -->
-                        <nav class="menu-content2">
-                            <div class="menu__item">
-                                <a class="menu__item-link">Showreel</a>
-                                <img class="menu__item-img" src="/assets/images/menu/travel-bg.png" alt="Some image" />
-                                <div class="marquee">
-                                    <div class="marquee__inner" aria-hidden="true">
-                                        <span>Showreel</span>
-                                        <span>Showreel</span>
-                                        <span>Showreel</span>
-                                        <span>Showreel</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu__item">
-                                <a class="menu__item-link">Case Studies</a>
-                                <img class="menu__item-img" src="/assets/images/menu/2.jpg" alt="Some image" />
-                                <div class="marquee">
-                                    <div class="marquee__inner" aria-hidden="true">
-                                        <span>Case Studies</span>
-                                        <span>Case Studies</span>
-                                        <span>Case Studies</span>
-                                        <span>Case Studies</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu__item">
-                                <a class="menu__item-link">Experiments</a>
-                                <img class="menu__item-img" src="/assets/images/menu/3.jpg" alt="Some image" />
-                                <div class="marquee">
-                                    <div class="marquee__inner" aria-hidden="true">
-                                        <span>Experiments</span>
-                                        <span>Experiments</span>
-                                        <span>Experiments</span>
-                                        <span>Experiments</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu__item">
-                                <a class="menu__item-link">Our Crew</a>
-                                <img class="menu__item-img" src="/assets/images/menu/4.jpg" alt="Some image" />
-                                <div class="marquee">
-                                    <div class="marquee__inner" aria-hidden="true">
-                                        <span>The Crew</span>
-                                        <span>The Crew</span>
-                                        <span>The Crew</span>
-                                        <span>The Crew</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu__item">
-                                <a class="menu__item-link">Contact</a>
-                                <img class="menu__item-img" src="/assets/images/menu/5.jpg" alt="Some image" />
-                                <div class="marquee">
-                                    <div class="marquee__inner" aria-hidden="true">
-                                        <span>Contact</span>
-                                        <span>Contact</span>
-                                        <span>Contact</span>
-                                        <span>Contact</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </nav>
+                        <ul class="metismenu">
+                            <li>
+                                <a class="has-arrow" href="#" aria-expanded="false">Home</a>
+                                <ul>
+                                    <li><a href="home-hotel.html">Home Airport</a></li>
+                                    <li><a href="home-bus.html">Home Bus</a></li>
+                                    <li><a href="home-cineplex.html">Home Cineplex </a></li>
+                                    <li><a href="home-general.html">Home General</a></li>
+                                    <li><a href="home-hotel.html">Home Hotel</a></li>
+                                    <li><a href="home-metro.html">Home Merto</a></li>
+                                    <li><a href="home-music.html">Home Music</a></li>
+                                    <li><a href="home-music_02.html">Home Music Two</a></li>
+                                    <li><a href="home-office.html">Home Office</a></li>
+                                    <li><a href="home-particles.html">Home Tech Shop</a></li>
+                                    <li><a href="home-restaurant.html">Home Restaurant</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="faq.html">F.A.Q</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="terms-conditions.html">Terms</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <!-- /.End Navlink -->
+            <!-- /.End Menu -->
         </div>
         <!-- /.End navbar -->
     </header>
     <!-- /.End Header -->
+    <!-- /.End of Page loader -->
     <!-- Start Content Wrap -->
     <div class="content-wrap flex flex-col justify-center min-h-screen relative overlay" data-vidbg-bg="mp4: /assets/media/video-bg.mp4, webm: assets/media/webm_video.webm, poster: assets/media/fallback.jpg" data-vidbg-options="loop: true, muted: true, overlay: false">
         <!-- Start Main Content -->
         <main class="relative z-[1] mt-auto md:mt-0">
-            <div class="lg:h-full flex flex-col lg:w-[50%] 2xl:w-[40%] w-full px-[1rem] md:px-[3rem] lg:pl-[4rem] xl:pl-[8rem] my-[4rem] z-10 text-white justify-center">
-                <h2>Welcome to</h2>
-                <div class="text-wrap relative overflow-hidden">
-                    <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold animate__animated">Cineplex Wi-Fi</h1>
-                </div>
-                <p>Enjoy high-speed internet during your stay for 6 hours.</p>
-                <!-- Start From Group -->
-                <form action="" class="mt-[4rem]">
-                    <div class="inline-flex items-center">
-                        <div class="relative">
-                            <input type="password" id="password" class="px-[.75rem] py-[1rem]  border border-2 border-primary focus:outline-none focus:border-primary floating-focus-two w-full sm:w-[345px] lg:w-auto xl:w-[345px] bg-transparent nodeHover" required>
-                            <img id="hide-password" src="/assets/images/icon/Show.svg" class="absolute top-[1.3rem] right-[1rem] cursor-pointer" alt="Show Password" onclick="passwordToggle()">
-                            <label for="password" class="absolute top-0 left-0 px-[.75rem] py-[1rem] whitespace-nowrap input-text transition-opacity transition-transform duration-100 ease-in-out">Wi-Fi Password</label>
+            <div class="lg:w-[50%] 2xl:w-[45%] lg:h-full flex flex-col px-[1rem] md:px-[3rem] lg:pl-[4rem] xl:pl-[8rem] my-[3rem] z-10 justify-center relative">
+                <div class="sm:w-[540px] lg:w-full 2xl:w-[540px] w-full">
+                    <!-- Start Login Content -->
+                    <div id="loginContainer">
+                        <h2>Welcome to</h2>
+                        <div class="text-wrap relative overflow-hidden">
+                            <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold animate__animated">Cineplex Wi-Fi</h1>
                         </div>
-                        <!-- Start Button -->
-                        <button class="flex items-center bg-primary border-2 border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] justify-center">
-                            <svg class="mr-2 hidden sm:block" width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4853 6.39948C14.799 1.71319 7.20102 1.71319 2.51472 6.39948C2.1242 6.79 1.49103 6.79 1.10051 6.39948C0.709987 6.00896 0.709987 5.37579 1.10051 4.98527C6.56785 -0.482069 15.4322 -0.482069 20.8995 4.98527C21.29 5.37579 21.29 6.00896 20.8995 6.39948C20.509 6.79 19.8758 6.79 19.4853 6.39948ZM16.6568 9.2279C13.5326 6.10371 8.46729 6.10371 5.34309 9.2279C4.95257 9.6184 4.3194 9.6184 3.92888 9.2279C3.53836 8.8374 3.53836 8.2042 3.92888 7.8137C7.83412 3.90845 14.1658 3.90845 18.071 7.8137C18.4615 8.2042 18.4615 8.8374 18.071 9.2279C17.6805 9.6184 17.0473 9.6184 16.6568 9.2279ZM13.8284 12.0563C12.2663 10.4942 9.7337 10.4942 8.17158 12.0563C7.78106 12.4469 7.14789 12.4469 6.75737 12.0563C6.36685 11.6658 6.36685 11.0326 6.75737 10.6421C9.1005 8.299 12.8995 8.299 15.2427 10.6421C15.6332 11.0326 15.6332 11.6658 15.2427 12.0563C14.8521 12.4469 14.219 12.4469 13.8284 12.0563ZM9 14.8848C9 13.7802 9.8954 12.8848 11 12.8848C12.1046 12.8848 13 13.7802 13 14.8848C13 15.9893 12.1046 16.8848 11 16.8848C9.8954 16.8848 9 15.9893 9 14.8848Z" fill="white" />
-                            </svg>
-                            <span class="text-white first-letter">Connect</span>
-                        </button>
-                        <!-- /.End Button -->
+                        <p>Enjoy high-speed internet during your stay for 6 hours.</p>
+                        <!-- Start From Group -->
+                        <form action="" class="mt-[4rem]">
+                            <div class="inline-flex items-center">
+                                <!-- Start Input Floating  -->
+                                <div class="form-floating relative">
+                                    <input type="password" id="password" class="form-control px-[.75rem] py-[1rem] bg-transparent  border-2 border-primary focus:outline-none focus:border-primary floating-focus-two w-full sm:w-[345px] lg:w-auto xl:w-[345px] nodeHover" placeholder="Wi-Fi Password">
+                                    <label for="password" class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none label-color">Wi-Fi Password</label>
+                                    <svg class="absolute top-[1.3rem] right-[1rem] cursor-pointer feather-eye nodeHover" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <use id="hide-password" xlink:href="#icon-eye-hide"></use>
+                                    </svg>
+                                </div>
+                                <!-- /.End Input Floating  -->
+                                <!-- Start Button -->
+                                <button type="button" class="flex items-center btn-color border-2 bg-primary border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] justify-center nodeHover" id="connect-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 hidden sm:block">
+                                        <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                                        <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                                        <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                                        <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                                    </svg>
+                                    <span class="first-letter">Connect</span>
+                                </button>
+                                <!-- /.End Button -->
+                            </div>
+                        </form>
+                        <!-- /.End From Group -->
+                        <!-- Password Hide Show Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+                            <symbol id="icon-eye">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </symbol>
+                            <symbol id="icon-eye-hide">
+                                <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                                <line x1="1" y1="1" x2="23" y2="23"></line>
+                            </symbol>
+                        </svg>
+                        <!-- /.End Password Hide Show Icon -->
+                        <div class="form-control mt-[1.5rem]">
+                            <label class="label cursor-pointer justify-start items-start">
+                                <input type="checkbox" class="checkbox rounded-[0] text-emerald-500" />
+                                <span class="label-text ml-[10px] font-[400] text-[1rem]">By accessing this Wi-Fi network, you agree to abide<br class="lg:hidden xl:block"> by our.<a href="./terms&condition.html"></a><span>Terms & Conditions</span>
+                            </label>
+                        </div>
+                        <p>Do you want access to our internet more? <button type="button" class="underline text-primary nodeHover" id="registerButton">Register</button></p>
                     </div>
-                </form>
-                <!-- /.End From Group -->
-                <div class="form-control mt-[1.5rem]">
-                    <label class="label cursor-pointer justify-start items-start">
-                        <input type="checkbox" class="checkbox border-white rounded-[0]" />
-                        <span class="label-text ml-[10px] font-[400] text-[1rem] text-white">By accessing this Wi-Fi network, you agree to abide<br> by our.<a href="./terms&condition.html"></a><span>Terms & Conditions</span>
-                    </label>
+                    <!-- /.End Login Content -->
+                    <!-- Start Register Content -->
+                    <div class="container-hidden" id="registerContainer">
+                        <h2>Register to</h2>
+                        <div class="text-wrap relative overflow-hidden">
+                            <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold">Nateget Packages</h1>
+                        </div>
+                        <p>Choose an option to get access to our high-speed internet.</p>
+                        <!-- Start From Group -->
+                        <div class="grid gap-3 mt-[3rem]">
+                            <!-- Start Radio Button -->
+                            <div class="form-check">
+                                <input class="sr-only peer" type="radio" name="options" id="option_1">
+                                <label class="flex items-center gap-2 px-5 py-4 backdrop-blur-[50px] bg-check border border-color-check cursor-pointer hover:bg-opacity-60 peer-checked:opacity-90 peer-checked:border-primary group" for="option_1">
+                                    <div class="flex items-center">
+                                        <div class="shrink-0 w-5 h-5 border border-current rounded-full peer-checked:group:bg-primary peer-checked:group:border-primary mr-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="hidden w-full h-full fill-current peer-checked:group:visible" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="text-xl font-medium">Free Internet</div>
+                                            <div class="text-sm font-light">Exactly what you need to get started.</div>
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <div class="font-medium text-base text-primary">Free/day</div>
+                                        <div class="text-sm font-light">24h - 3mbps</div>
+                                    </div>
+                                </label>
+                            </div>
+                            <!-- /.End Radio Button -->
+                            <!-- Start Radio Button -->
+                            <div class="form-check">
+                                <input class="sr-only peer" type="radio" name="options" id="option_2">
+                                <label class="flex items-center gap-2 px-5 py-4 backdrop-blur-[50px] bg-check border border-color-check cursor-pointer hover:bg-opacity-60 peer-checked:opacity-90 peer-checked:border-primary group" for="option_2">
+                                    <div class="flex items-center">
+                                        <div class="shrink-0 w-5 h-5 border border-current rounded-full peer-checked:group:bg-primary peer-checked:group:border-primary mr-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="hidden w-full h-full fill-current peer-checked:group:visible" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="text-xl font-medium">Premium Internet</div>
+                                            <div class="text-sm font-light">Best for streaming, video watching</div>
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <div class="font-medium text-base text-primary">$19.99/day</div>
+                                        <div class="text-sm font-light">72h - 10mbps</div>
+                                    </div>
+                                </label>
+                            </div>
+                            <!-- /.End Radio Button -->
+                            <!-- Start Form Content -->
+                            <form id="myForm" action="" class="mt-[2rem]  hidden">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <!-- Start Input Floating  -->
+                                    <div class="col-span-2 sm:col-span-1 form-floating relative">
+                                        <input type="email" class="form-control px-[.75rem] py-[1rem] bg-transparent border border-current focus:outline-none focus:border-primary floating-focus-two w-full nodeHover" placeholder="name@example.com">
+                                        <label class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none label-color">Email</label>
+                                    </div>
+                                    <!-- /.End Input Floating  -->
+                                    <!-- Start Input Floating  -->
+                                    <div class="col-span-2 sm:col-span-1 form-floating relative">
+                                        <input type="text" class="form-control px-[.75rem] py-[1rem] bg-transparent border border-current focus:outline-none focus:border-primary floating-focus-two w-full nodeHover" placeholder="Card Holder Name">
+                                        <label class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none label-color">Card Holder Name</label>
+                                    </div>
+                                    <!-- /.End Input Floating  -->
+                                    <!-- Start Input Floating  -->
+                                    <div class="col-span-2 form-floating relative">
+                                        <input type="text" class="form-control px-[.75rem] py-[1rem] bg-transparent border border-current focus:outline-none focus:border-primary floating-focus-two w-full nodeHover" placeholder="A/C No.">
+                                        <label class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none label-color">A/C No.</label>
+                                    </div>
+                                    <!-- /.End Input Floating  -->
+                                    <!-- Start Input Floating  -->
+                                    <div class="col-span-2 sm form-floating relative">
+                                        <input type="text" class="form-control px-[.75rem] py-[1rem] bg-transparent border border-current focus:outline-none focus:border-primary floating-focus-two w-full nodeHover" placeholder="Expires">
+                                        <label class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none label-color">Expires</label>
+                                    </div>
+                                    <!-- /.End Input Floating  -->
+                                    <!-- Start Input Floating  -->
+                                    <div class="col-span-2 sm form-floating relative">
+                                        <input type="text" class="form-control px-[.75rem] py-[1rem] bg-transparent border border-current focus:outline-none focus:border-primary floating-focus-two w-full nodeHover" placeholder="CVV">
+                                        <label class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none label-color">CVV</label>
+                                    </div>
+                                    <!-- /.End Input Floating  -->
+                                </div>
+                            </form>
+                            <!-- /.End Form Content -->
+                        </div>
+                        <!-- /.End From Group -->
+                        <button type="button" class="flex items-center btn-color border-2 bg-primary border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] justify-center w-full mt-[3rem] nodeHover " id="continue-button">Continue</button>
+                        <p class="text-center">Do you want access to our internet more? <button type="button" class="underline text-primary nodeHover" id="loginButton"><span>Log in</span></button></p>
+                    </div>
+                    <!-- /.End Register Content -->
+                    <!-- Start Congratulations ! Message  -->
+                    <div class="container-hidden" id="cong-container">
+                        <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold">Congratulations !</h1>
+                        <p>Your registration has been completed.</p>
+                        <div class="backdrop-blur-[50px] bg-[#fff]/25 p-5 text-center mt-[3rem]">
+                            <p class="text-[20px]">Wi-Fi Password</p>
+                            <p class="mt-0">winwin4534@</p>
+                        </div>
+                        <span class="text-primary underline mt-[30px] block text-center">Copy Link</span>
+                        <button type="button" class="flex items-center btn-color border-2 bg-primary border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] justify-center w-full mt-[3rem] nodeHover " id="loginButtonTwo">Go to Login Screen</button>
+                    </div>
+                    <!-- /.End Congratulations ! Message -->
+                    <!-- Start Countdown Timer -->
+                    <div class="container-hidden" id="logout">
+                        <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold">Metro Train Wi-Fi</h1>
+                        <p>Enjoy high-speed internet during your stay for 6 hours.</p>
+                        <div class="backdrop-blur-[50px] bg-[#fff]/25 p-5 mt-[3rem]">
+                            <h4 class="text-[20px] text-center ">Session Duration</h4>
+                            <div class="flex w-full justify-center text-[3rem] font-bold text-primary">
+                                <!-- Start Hours -->
+                                <h4 id="hours" class="">00</h4>
+                                <div class="">:</div>
+                                <!-- /.End Hours -->
+                                <!-- Start Minutes -->
+                                <h4 id="minutes" class="">00</h4>
+                                <div class="">:</div>
+                                <!-- /.End Minutes -->
+                                <!-- Start Seconds -->
+                                <h4 id="seconds" class="">00</h4>
+                                <!-- /.End Seconds -->
+                            </div>
+                        </div>
+                        <button id="logoutButton" class="border-2 btn-color bg-primary border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] w-full mt-[2rem] nodeHover">Logout</button>
+                    </div>
+                    <!-- End Countdown Timer -->
                 </div>
-                <p>Do you want access to our internet more? <span class="underline text-primary nodeHover">Register</span></p>
             </div>
             <!-- Start Sidebar Image -->
             <!-- <div class="bg-no-repeat bg-top bg-cover lg:bg-contain h-full right-0 lg:w-[50%] 2xl:w-[40%] absolute lg:relative w-full h-100 top-0 opacity-10 lg:opacity-100"></div> -->
@@ -197,17 +307,28 @@
     <!-- create cursor markups  -->
     <div class="node" id="node"></div>
     <div class="cursor" id="cursor"></div>
-
-    <!-- Optional JavaScript -->
     <!-- jquery -->
     <script src="/assets/js/jquery.min.js"></script>
+    <!-- metisMenu -->
+    <script src="/assets/plugins/metismenu/metisMenu.min.js"></script>
     <!-- Nodecursor -->
     <script src="/assets/plugins/node-cursor/nodecursor-jquery.min.js"></script>
+    <!-- jQuery three.js -->
+    <script src="/assets/plugins/three.js/three.min.js"></script>
+    <!-- GSAP -->
+    <script src="/assets/plugins/gsap/gsap.min.js"></script>
+    <!-- Ripple Hover Effect -->
+    <script src="/assets/plugins/ripple-hover-effect/ripple-effect.min.js"></script>
+    <!-- mgGlitch -->
+    <script src="/assets/plugins/mgGlitch/mgGlitch.min.js"></script>
+    <!-- Lottie Player -->
+    <script src="/assets/plugins/lottie-player/lottie-player.min.js"></script>
     <!-- Background Video -->
     <script src="/assets/plugins/vidbg/vidbg.min.js"></script>
+    <!-- Particles -->
+    <script src="/assets/plugins/particles/particles.min.js"></script>
     <!-- Custom -->
     <script src="/assets/js/custom.js"></script>
-
 </body>
 
 </html>

@@ -23,7 +23,7 @@
     <!-- Start Page loader -->
     <div id="loader-wrapper">
         <div class="loader-img">
-            <img src="/assets/images/logo.svg" alt="">
+            <img src="/assets/images/logo-white.svg" alt="">
         </div>
         <div id="load">
             <div>G</div>
@@ -63,16 +63,17 @@
                             <li>
                                 <a class="has-arrow" href="#" aria-expanded="false">Home</a>
                                 <ul>
+                                    <li><a href="home-hotel.html">Home Airport</a></li>
+                                    <li><a href="home-bus.html">Home Bus</a></li>
+                                    <li><a href="home-cineplex.html">Home Cineplex </a></li>
                                     <li><a href="home-general.html">Home General</a></li>
                                     <li><a href="home-hotel.html">Home Hotel</a></li>
-                                    <li><a href="home-hotel.html">Home Airport</a></li>
-                                    <li><a href="home-restaurant.html">Home Restaurant</a></li>
                                     <li><a href="home-metro.html">Home Merto</a></li>
-                                    <li><a href="home-cineplex.html">Home Cineplex </a></li>
+                                    <li><a href="home-music.html">Home Music</a></li>
+                                    <li><a href="home-music_02.html">Home Music Two</a></li>
+                                    <li><a href="home-office.html">Home Office</a></li>
                                     <li><a href="home-particles.html">Home Tech Shop</a></li>
-                                    <li><a href="home-bus.html">Home Bus</a></li>
-                                    <li><a href="home-market.html">Home Market</a></li>
-                                    <li><a href="home-market.html">Home Office</a></li>
+                                    <li><a href="home-restaurant.html">Home Restaurant</a></li>
                                 </ul>
                             </li>
                             <li><a href="about.html">About</a></li>
@@ -95,12 +96,6 @@
         <!--/.Particles Background-->
         <!-- Start Main Content -->
         <main class="w-full mt-auto md:mt-0">
-            <!-- Start Background Lottie Json For Large Device -->
-            <div class="lg:bg-contain h-full left-0 lg:w-[50%] 2xl:w-[55%] absolute w-full h-100 top-0 opacity-10 lg:opacity-100">
-                <!-- <img src="/assets/images/illustration/music.png" class="h-full w-full object-contain" alt=""> -->
-                <lottie-player class="h-full w-full object-contain" src="/assets/images/json/music.json" background="transparent" speed="1" loop autoplay></lottie-player>
-            </div>
-            <!-- /.End Background Lottie Json  For Large Device -->
             <!-- /.End Sidebar Image -->
             <div class="lg:w-[50%] 2xl:w-[45%] lg:h-full flex flex-col px-[1rem] md:px-[3rem] lg:pr-[4rem] xl:pr-[8rem] my-[3rem] z-10 justify-center ml-auto relative">
                 <div class="sm:w-[540px] lg:w-full 2xl:w-[540px] w-full m-auto">
@@ -118,7 +113,7 @@
                                 <div class="form-floating relative">
                                     <input type="password" id="password" class="form-control px-[.75rem] py-[1rem] bg-transparent  border-2 border-primary focus:outline-none focus:border-primary floating-focus-two w-full sm:w-[345px] lg:w-auto xl:w-[345px] nodeHover" placeholder="Wi-Fi Password">
                                     <label for="password" class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none label-color">Wi-Fi Password</label>
-                                    <svg class="absolute top-[1.3rem] right-[1rem] cursor-pointer nodeHover" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye" onclick="passwordToggle()">
+                                    <svg class="absolute top-[1.3rem] right-[1rem] cursor-pointer feather-eye nodeHover" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <use id="hide-password" xlink:href="#icon-eye-hide"></use>
                                     </svg>
                                 </div>
@@ -364,12 +359,20 @@
     <script src="/assets/plugins/metismenu/metisMenu.min.js"></script>
     <!-- Nodecursor -->
     <script src="/assets/plugins/node-cursor/nodecursor-jquery.min.js"></script>
+    <!-- jQuery three.js -->
+    <script src="/assets/plugins/three.js/three.min.js"></script>
+    <!-- GSAP -->
+    <script src="/assets/plugins/gsap/gsap.min.js"></script>
+    <!-- Ripple Hover Effect -->
+    <script src="/assets/plugins/ripple-hover-effect/ripple-effect.min.js"></script>
+    <!-- mgGlitch -->
+    <script src="/assets/plugins/mgGlitch/mgGlitch.min.js"></script>
+    <!-- Lottie Player -->
+    <script src="/assets/plugins/lottie-player/lottie-player.min.js"></script>
     <!-- Background Video -->
     <script src="/assets/plugins/vidbg/vidbg.min.js"></script>
     <!-- Particles -->
     <script src="/assets/plugins/particles/particles.min.js"></script>
-    <!-- Particles Active -->
-    <script src="/assets/js/particles.active.js"></script>
     <!-- Custom -->
     <script src="/assets/js/custom.js"></script>
 </body>

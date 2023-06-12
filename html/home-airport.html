@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/assets/css/custom.css">
 </head>
 
-<body class="demo-office">
+<body class="demo-airport">
     <!-- Start Page loader -->
     <div id="loader-wrapper">
         <div class="loader-img">
@@ -40,7 +40,7 @@
     </div>
     <!-- /.End of Page loader -->
     <!-- Start Header -->
-    <header class="header header-dark bg-transparent fixed flex justify-between items-center py-[1rem] xl:py-[2rem] 2xl:py-[2rem] px-[1rem] md:px-[3rem] lg:px-[4rem] xl:px-[8rem] w-full z-[99]">
+    <header class="header header-white bg-transparent fixed flex justify-between items-center py-[1rem] xl:py-[2rem] 2xl:py-[2rem] px-[1rem] md:px-[3rem] lg:px-[4rem] xl:px-[8rem] w-full z-[99]">
         <!-- Start Logo -->
         <div class="logo">
             <img src="/assets/images/logo-white.svg" alt="" class="logo-white w-[145px] md:w-[180px] xl:w-[250px]">
@@ -91,16 +91,16 @@
     <!-- /.End Header -->
     <!-- /.End of Page loader -->
     <!-- Start Content Wrap -->
-    <div class="content-wrap bg-[#6f006d] flex flex-col justify-center min-h-screen relative overlay">
+    <div class="content-wrap flex flex-col justify-center min-h-screen relative overlay">
         <!-- Start Main Content -->
         <main class="w-full mt-auto md:mt-0">
-            <div class="lg:w-[50%] 2xl:w-[50%] lg:h-full flex flex-col px-[1rem] md:px-[3rem] lg:pl-[4rem] xl:pl-[8rem] my-[3rem] z-10 justify-center relative">
+            <div class="lg:w-[50%] 2xl:w-[45%] lg:h-full flex flex-col px-[1rem] md:px-[3rem] lg:pl-[4rem] xl:pl-[8rem] my-[3rem] z-10 justify-center relative">
                 <div class="sm:w-[540px] lg:w-full 2xl:w-[540px] w-full">
                     <!-- Start Login Content -->
                     <div id="loginContainer">
                         <h2>Welcome to</h2>
                         <div class="text-wrap relative overflow-hidden">
-                            <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold animate__animated">Office Wi-Fi</h1>
+                            <h1 class="text-[2.5rem] md:text-[3rem] xl:text-[4rem] font-bold animate__animated">Airport Wi-Fi</h1>
                         </div>
                         <p>Enjoy high-speed internet during your stay for 6 hours.</p>
                         <!-- Start From Group -->
@@ -108,7 +108,7 @@
                             <div class="inline-flex items-center">
                                 <!-- Start Input Floating  -->
                                 <div class="form-floating relative">
-                                    <input type="password" id="password" class="form-control px-[.75rem] py-[1rem] bg-transparent  border-2 border-white focus:outline-none focus:border-white floating-focus-two w-full sm:w-[345px] lg:w-auto xl:w-[345px] nodeHover" placeholder="Wi-Fi Password">
+                                    <input type="password" id="password" class="form-control px-[.75rem] py-[1rem] bg-transparent  border-2 border-primary focus:outline-none focus:border-primary floating-focus-two w-full sm:w-[345px] lg:w-auto xl:w-[345px] nodeHover" placeholder="Wi-Fi Password">
                                     <label for="password" class="absolute top-0 left-0 z-[2] h-full px-[0.75rem] py-[1rem] overflow-hidden text-left text-ellipsis whitespace-nowrap pointer-events-none label-color">Wi-Fi Password</label>
                                     <svg class="absolute top-[1.3rem] right-[1rem] cursor-pointer feather-eye nodeHover" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <use id="hide-password" xlink:href="#icon-eye-hide"></use>
@@ -116,7 +116,7 @@
                                 </div>
                                 <!-- /.End Input Floating  -->
                                 <!-- Start Button -->
-                                <button type="button" class="flex items-center btn-color border-2 bg-primary border-white px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] justify-center nodeHover" id="connect-btn">
+                                <button type="button" class="flex items-center btn-color border-2 bg-primary border-primary px-[.75rem] md:px-[1.5rem] py-[1rem] h-[3.75rem] ml-[-2px] justify-center nodeHover" id="connect-btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 hidden sm:block">
                                         <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
                                         <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
@@ -283,16 +283,17 @@
                 </div>
             </div>
             <!-- Start Sidebar Image -->
-            <div class="lg:bg-contain  right-0 lg:w-[50%] 2xl:w-[50%] absolute w-full h-full top-0 opacity-10 lg:opacity-100 overflow-hidden water-ripple-effect">
-                <!-- <img src="/assets/images/office.jpg" alt="" class="h-full w-full object-cover "> -->
+            <div class="lg:bg-contain h-full right-0 lg:w-[50%] 2xl:w-[55%] absolute w-full h-100 top-0 opacity-10 lg:opacity-100 overflow-hidden 2xl:px-[8rem]">
+                <img src="/assets/images/illustration/airport.svg" class="h-full w-full object-cover">
+                <!-- <lottie-player class="h-full w-full object-contain" src="/assets/images/json/airport.json" background="transparent" speed="1" loop autoplay></lottie-player> -->
             </div>
             <!-- /.End Sidebar Image -->
         </main>
         <!-- /. End Main Content -->
         <!-- Start Footer -->
-        <footer class="footer flex justify-center lg:justify-end md:justify-start flex-wrap md:absolute bottom-0 w-full gap-3 text-center items-center px-[1rem] md:px-[3rem] lg:px-[4rem] xl:px-[8rem] py-[2rem] z-[10] mt-auto">
+        <footer class="footer flex justify-center md:justify-start flex-wrap md:absolute bottom-0 w-full gap-3 text-center items-center px-[1rem] md:px-[3rem] lg:px-[4rem] xl:px-[8rem] py-[2rem] z-[10] mt-auto">
             <!-- Start Social Media -->
-            <div class="flex gap-2 grid-cols-4 justify-center social-icon w-full md:w-auto md:pl-3 md:border-l-[1px] border-current order-last">
+            <div class="flex gap-2 grid-cols-4 justify-center social-icon w-full md:w-auto md:pr-3 md:border-r-[1px] border-current">
                 <a href="#" class="nodeHover h-[2.4rem] w-[2.4rem] flex items-center justify-center backdrop-blur-[50px] social-link-color bg-social-link">
                     <svg width="9" height="16" viewBox="0 0 9 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.66451 2.65667H8.12518V0.112667C7.87318 0.078 7.00651 0 5.99718 0C3.89118 0 2.44851 1.32467 2.44851 3.75933V6H0.124512V8.844H2.44851V16H5.29784V8.84467H7.52784L7.88184 6.00067H5.29718V4.04133C5.29785 3.21933 5.51918 2.65667 6.66451 2.65667Z" fill="currentColor" />
@@ -351,7 +352,6 @@
         </footer>
         <!-- /.End Footer -->
     </div>
-    <div class="error"></div>
     <!-- /.End Content Wrap -->
     <!-- create cursor markups  -->
     <div class="node" id="node"></div>
